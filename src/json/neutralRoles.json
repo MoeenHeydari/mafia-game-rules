@@ -1,0 +1,98 @@
+[
+    { 
+        "id": 201,
+        "name": "SerialKiller",
+        "classification": "neutral",
+        "alignment": "Neutral (Killing)",
+        "description": "If you are role blocked you will attack the role blocker in addition to your target. Role blockers that target you will have their last will covered in blood making it unreadable. You can choose to be cautious and not kill role blockers.",
+        "img": "../assets/images/roles/SerialKiller.png",
+        "href": "/neutralRoles/SerialKiller"
+    } ,
+
+    { 
+        "id": 202,
+        "name": "Werewolf",
+        "classification": "neutral",
+        "alignment": "Neutral (Killing)",
+        "description": "As a Werewolf you can not be killed at night. As a Werewolf you will attack your victim and anyone that visits them. Your attack goes through night immunity. As a Werewolf you may choose to stay home and attack anyone who visits you.",
+        "img": "../assets/images/roles/Werewolf.png",
+        "href": "/neutralRoles/Werewolf"
+    } ,
+
+    { 
+        "id": 203,
+        "name": "Arsonist",
+        "classification": "neutral",
+        "alignment": "Neutral (Killing)",
+        "description": "Death from fire can't be prevented by healing. Select yourself to ignite doused people. You will douse anybody that visits you. You can take no action to undouse yourself.",
+        "img": "../assets/images/roles/Arsonist.png",
+        "href": "/neutralRoles/Arsonist"
+    } ,
+
+    { 
+        "id": 204,
+        "name": "Poisoner",
+        "classification": "neutral",
+        "alignment": "Neutral (Killing)",
+        "description": "Your poisons take one day to take effect. Poison can be removed by Heals. With the Necronomicon, your poison can no longer be Healed.",
+        "img": "../assets/images/roles/Poisoner.png",
+        "href": "/neutralRoles/Poisoner"
+    } ,
+
+    { 
+        "id": 205,
+        "name": "GuardianAngel",
+        "classification": "neutral",
+        "alignment": "Neutral (Benign)",
+        "description": "If your target is killed you will become a Survivor without any bulletproof vests. Twice a game you may Heal and Purge your target. This may be done from the grave. Watching over a player ignores Jailing.",
+        "img": "../assets/images/roles/GuardianAngel.png",
+        "href": "/neutralRoles/GuardianAngel"
+    } ,
+
+    { 
+        "id": 206,
+        "name": "Juggernaut",
+        "classification": "neutral",
+        "alignment": "Neutral (Killing)",
+        "description": "With each kill your powers grow. You may attack every night. You have Basic Defense. You Rampage when you attack. You now ignore all effects that would protect a player.",
+        "img": "../assets/images/roles/Juggernaut.png",
+        "href": "/neutralRoles/Juggernaut"
+    } ,
+
+    { 
+        "id": 207,
+        "name": "Pirate",
+        "classification": "neutral",
+        "alignment": "Neutral (Chaos)",
+        "description": "When you plunder a player, you will duel the player for their valuables. If the player defends against your attack, you get no loot.",
+        "img": "../assets/images/roles/Pirate.png",
+        "href": "/neutralRoles/Pirate"
+    },
+    { 
+        "id": 208,
+        "name": "Survivor",
+        "classification": "neutral",
+        "alignment": "Neutral (Benign)",
+        "description": "Put on a bulletproof vest at night, protecting you from attacks.",
+        "img": "../assets/images/roles/Survivor.png",
+        "href": "/neutralRoles/Survivor"
+    },
+    { 
+        "id": 209,
+        "name": "Plaguebearer",
+        "classification": "neutral",
+        "alignment": "Neutral (Chaos)",
+        "description": "Infected players spread the plague on visiting or being visited. Infection cannot be protected against or removed.",
+        "img": "../assets/images/roles/Plaguebearer.png",
+        "href": "/neutralRoles/Citizen"
+    },
+    { 
+        "id": 210,
+        "name": "Jester",
+        "classification": "neutral",
+        "alignment": "Neutral (Evil)",
+        "description": "If you are lynched you may kill one of your guilty or abstaining voters the following night.",
+        "img": "../assets/images/roles/Jester.png",
+        "href": "/neutralRoles/Plaguebearer"
+    }
+]
