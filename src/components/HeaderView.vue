@@ -1,14 +1,12 @@
 <template>
     <div class="header">
 
-        <a href="/">
-            <fa icon="home"/>
-        </a>
-
-        <img class="logo" id="logo" src="../assets/images/logo.png">
-        
         <a @click="$router.go(-1)">
-            <fa icon="undo-alt"/>
+            <fa icon="arrow-alt-circle-left"/>
+        </a>
+        
+        <a class="logo" href="/">
+            <img id="logo" src="../assets/images/logo.png">
         </a>
 
     </div>
@@ -37,8 +35,12 @@
 a {
     font-size: 30pt;
     color: #fff;
-    margin-top: 100px;
+    margin-top: 50px;
     cursor: pointer;
+}
+
+.logo {
+    margin: 0 auto;
 }
 </style>
   

@@ -61,6 +61,7 @@ p {
 img {
     max-width: 80%;
     cursor: pointer;
+    border-radius: 30px;
 }
 </style>
   

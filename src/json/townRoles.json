@@ -11,16 +11,36 @@
 
     { 
         "id": 2,
-        "name": "Doctor",
+        "name": "Invulnerable",
         "classification": "town",
-        "alignment": "Town (Protective)",
-        "description": "You may only heal yourself once. You will know if your target is attacked.",
-        "img": "../assets/images/roles/Doctor.png",
-        "href": "/townRoles/Doctor"
+        "alignment": "Town (Townie)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Invulnerable.png",
+        "href": "/townRoles/Invulnerable"
     },
 
     { 
         "id": 3,
+        "name": "Traitor",
+        "classification": "town",
+        "alignment": "Town (Townie)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Traitor.png",
+        "href": "/townRoles/Traitor"
+    },
+
+    { 
+        "id": 4,
+        "name": "Student",
+        "classification": "town",
+        "alignment": "Town (Townie)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Student.png",
+        "href": "/townRoles/Student"
+    },
+
+    { 
+        "id": 5,
         "name": "Detective",
         "classification": "town",
         "alignment": "Town (Investigative)",
@@ -30,67 +50,7 @@
     },
 
     { 
-        "id": 4,
-        "name": "Bodyguard",
-        "classification": "town",
-        "alignment": "Town (Investigative)",
-        "description": "You will know if your target is suspicious, except for the Godfather.",
-        "img": "../assets/images/roles/Bodyguard.png",
-        "href": "/townRoles/Bodyguard"
-    },
-
-    { 
-        "id": 5,
-        "name": "Sniper",
-        "classification": "town",
-        "alignment": "Town (Protective)",
-        "description": "If your target is attacked, both you and your attacker will die instead. If you successfully protect someone, you can't be saved from death. Your counterattack ignores night immunity.",
-        "img": "../assets/images/roles/Sniper.png",
-        "href": "/townRoles/Sniper"
-    },
-
-    { 
         "id": 6,
-        "name": "Veteran",
-        "classification": "town",
-        "alignment": "Town (Killing)",
-        "description": "While on alert you can not be killed at night. If anyone visits you while you are on alert they will be shot. You can only go on alert 3 times. You are immune to role blocks.",
-        "img": "../assets/images/roles/Veteran.png",
-        "href": "/townRoles/Veteran"
-    },
-
-    { 
-        "id": 7,
-        "name": "Crusader",
-        "classification": "town",
-        "alignment": "Town (Killing)",
-        "description": "Grant your target Powerful defense. You will know if your target is attacked. You attack one person who visits your target on the same night. You do not attack vampires, but you do block their attacks. You will know if your target is attacked.",
-        "img": "../assets/images/roles/Crusader.png",
-        "href": "/townRoles/Crusader"
-    },
-
-    { 
-        "id": 8,
-        "name": "Escort",
-        "classification": "town",
-        "alignment": "Town (Support)",
-        "description": "Distraction blocks your target from using their role's night ability. You are immune to role blocks. If you target a Serial Killer, they will attack you.",
-        "img": "../assets/images/roles/Escort.png",
-        "href": "/townRoles/Escort"
-    },
-
-    { 
-        "id": 9,
-        "name": "Tracker",
-        "classification": "town",
-        "alignment": "Town (Investigative)",
-        "description": "Track one person at night to see who they visit.",
-        "img": "../assets/images/roles/Tracker.png",
-        "href": "/townRoles/Tracker"
-    },
-
-    { 
-        "id": 10,
         "name": "Lookout",
         "classification": "town",
         "alignment": "Town (Investigative)",
@@ -100,17 +60,167 @@
     },
 
     { 
-        "id": 11,
-        "name": "Retributionist",
+        "id": 7,
+        "name": "Tracker",
         "classification": "town",
-        "alignment": "Town (Support)",
-        "description": "Create zombies from dead true-hearted Town players. Use their abilities on your second target. Each zombie can be used once before it rots.",
-        "img": "../assets/images/roles/Retributionist.png",
-        "href": "/townRoles/Retributionist"
+        "alignment": "Town (Investigative)",
+        "description": "Track one person at night to see who they visit.",
+        "img": "../assets/images/roles/Tracker.png",
+        "href": "/townRoles/Tracker"
+    },
+
+    { 
+        "id": 8,
+        "name": "Autopsist",
+        "classification": "town",
+        "alignment": "Town (Investigative)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Autopsist.png",
+        "href": "/townRoles/Autopsist"
+    },
+
+    { 
+        "id": 9,
+        "name": "Mason",
+        "classification": "town",
+        "alignment": "Town (Investigative)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Mason.png",
+        "href": "/townRoles/Mason"
+    },
+
+    { 
+        "id": 10,
+        "name": "Sniper",
+        "classification": "town",
+        "alignment": "Town (Protective)",
+        "description": "If your target is attacked, both you and your attacker will die instead. If you successfully protect someone, you can't be saved from death. Your counterattack ignores night immunity.",
+        "img": "../assets/images/roles/Sniper.png",
+        "href": "/townRoles/Sniper"
+    },
+
+    { 
+        "id": 11,
+        "name": "Veteran",
+        "classification": "town",
+        "alignment": "Town (Killing)",
+        "description": "While on alert you can not be killed at night. If anyone visits you while you are on alert they will be shot. You can only go on alert 3 times. You are immune to role blocks.",
+        "img": "../assets/images/roles/Veteran.png",
+        "href": "/townRoles/Veteran"
     },
 
     { 
         "id": 12,
+        "name": "Jailor",
+        "classification": "town",
+        "alignment": "Town (Killing)",
+        "description": "You may anonymously talk with your prisoner.  You may choose to execute your prisoner. The jailed target cannot perform their night ability. While jailed the prisoner is safe from all attacks.",
+        "img": "../assets/images/roles/Jailor.png",
+        "href": "/townRoles/Jailor"
+    },
+
+    { 
+        "id": 13,
+        "name": "Gunsmith",
+        "classification": "town",
+        "alignment": "Town (Killing)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Gunsmith.png",
+        "href": "/townRoles/Gunsmith"
+    },
+
+    { 
+        "id": 14,
+        "name": "VampireHunter",
+        "classification": "town",
+        "alignment": "Town (Killing)",
+        "description": "If you find a Vampire you will stake them in the heart. If a Vampire visits you they will be staked. You can hear Vampires at night.If you kill all Vampires you will become a Vigilante.",
+        "img": "../assets/images/roles/VampireHunter.png",
+        "href": "/townRoles/VampireHunter"
+    },
+
+    { 
+        "id": 15,
+        "name": "Doctor",
+        "classification": "town",
+        "alignment": "Town (Protective)",
+        "description": "You may only heal yourself once. You will know if your target is attacked.",
+        "img": "../assets/images/roles/Doctor.png",
+        "href": "/townRoles/Doctor"
+    },
+
+    { 
+        "id": 16,
+        "name": "Hero",
+        "classification": "town",
+        "alignment": "Town (Protective)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Hero.png",
+        "href": "/townRoles/Hero"
+    },
+
+    { 
+        "id": 17,
+        "name": "Bodyguard",
+        "classification": "town",
+        "alignment": "Town (Protective)",
+        "description": "You will know if your target is suspicious, except for the Godfather.",
+        "img": "../assets/images/roles/Bodyguard.png",
+        "href": "/townRoles/Bodyguard"
+    },
+
+    { 
+        "id": 18,
+        "name": "Crusader",
+        "classification": "town",
+        "alignment": "Town (Protective)",
+        "description": "Grant your target Powerful defense. You will know if your target is attacked. You attack one person who visits your target on the same night. You do not attack vampires, but you do block their attacks. You will know if your target is attacked.",
+        "img": "../assets/images/roles/Crusader.png",
+        "href": "/townRoles/Crusader"
+    },
+
+    { 
+        "id": 19,
+        "name": "Trapper",
+        "classification": "town",
+        "alignment": "Town (Protective)",
+        "description": "Traps take one day to build. Traps can be torn down by selecting yourself at night. You may only have one Trap out at a time.",
+        "img": "../assets/images/roles/Trapper.png",
+        "href": "/townRoles/Trapper"
+    },
+
+    { 
+        "id": 20,
+        "name": "Reflector",
+        "classification": "town",
+        "alignment": "Town (Protective)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Reflector.png",
+        "href": "/townRoles/Reflector"
+    },
+
+    { 
+        "id": 21,
+        "name": "Priest",
+        "classification": "town",
+        "alignment": "Town (Support)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Priest.png",
+        "href": "/townRoles/Priest"
+    },
+
+    { 
+        "id": 22,
+        "name": "Escort",
+        "classification": "town",
+        "alignment": "Town (Support)",
+        "description": "Distraction blocks your target from using their role's night ability. You are immune to role blocks. If you target a Serial Killer, they will attack you.",
+        "img": "../assets/images/roles/Escort.png",
+        "href": "/townRoles/Escort"
+    },
+
+    { 
+        "id": 23,
         "name": "Mayor",
         "classification": "town",
         "alignment": "Town (Support)",
@@ -120,12 +230,32 @@
     },
 
     { 
-        "id": 13,
-        "name": "Trapper",
+        "id": 24,
+        "name": "Retributionist",
         "classification": "town",
-        "alignment": "Town (Protective)",
-        "description": "Traps take one day to build. Traps can be torn down by selecting yourself at night. You may only have one Trap out at a time.",
-        "img": "../assets/images/roles/Trapper.png",
-        "href": "/townRoles/Trapper"
+        "alignment": "Town (Support)",
+        "description": "Create zombies from dead true-hearted Town players. Use their abilities on your second target. Each zombie can be used once before it rots.",
+        "img": "../assets/images/roles/Retributionist.png",
+        "href": "/townRoles/Retributionist"
+    },
+
+    { 
+        "id": 25,
+        "name": "Judge",
+        "classification": "town",
+        "alignment": "Town (Support)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Judge.png",
+        "href": "/townRoles/Judge"
+    },
+
+    { 
+        "id": 26,
+        "name": "Conjurer",
+        "classification": "town",
+        "alignment": "Town (Support)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Conjurer.png",
+        "href": "/townRoles/Conjurer"
     }
 ]

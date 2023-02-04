@@ -9,9 +9,47 @@
 
         <!-- Creating a set of cards that are predefined in the Jason file -->
         <div class="container">
+            
+            <hr>
+            <h2>Town (Townie)</h2>
             <div class="card" v-for="townRole in townRoles" :key="townRole" @click="createCard(townRole.id)">
-                <img :src="require(`@/assets/images/roles/${townRole.name}.png`)" />
+                <div v-if="townRole.alignment === 'Town (Townie)'">
+                    <img :src="require(`@/assets/images/roles/${townRole.name}.png`)" />
+                </div>
             </div>
+            
+            <hr>
+            <h2>Town (Investigative)</h2>
+            <div class="card" v-for="townRole in townRoles" :key="townRole" @click="createCard(townRole.id)">
+                <div v-if="townRole.alignment === 'Town (Investigative)'">
+                    <img :src="require(`@/assets/images/roles/${townRole.name}.png`)" />
+                </div>
+            </div>
+
+            <hr>
+            <h2>Town (Protective)</h2>
+            <div class="card" v-for="townRole in townRoles" :key="townRole" @click="createCard(townRole.id)">
+                <div v-if="townRole.alignment === 'Town (Protective)'">
+                    <img :src="require(`@/assets/images/roles/${townRole.name}.png`)" />
+                </div>
+            </div>
+
+            <hr>
+            <h2>Town (Killing)</h2>
+            <div class="card" v-for="townRole in townRoles" :key="townRole" @click="createCard(townRole.id)">
+                <div v-if="townRole.alignment === 'Town (Killing)'">
+                    <img :src="require(`@/assets/images/roles/${townRole.name}.png`)" />
+                </div>
+            </div>
+
+            <hr>
+            <h2>Town (Support)</h2>
+            <div class="card" v-for="townRole in townRoles" :key="townRole" @click="createCard(townRole.id)">
+                <div v-if="townRole.alignment === 'Town (Support)'">
+                    <img :src="require(`@/assets/images/roles/${townRole.name}.png`)" />
+                </div>
+            </div>
+
         </div>
     </div>
     
@@ -73,6 +111,7 @@ main {
 img {
     width: 90%;
     padding: 10px;
+    border-radius: 30px;
 }
 
 .container {
@@ -85,13 +124,16 @@ img {
     height: auto;
     cursor: pointer;
     margin: auto;
-    float: left;
+    
 }
 
 h1{
     color:#54FDA3;
 }
 
+h2 {
+    display: block;
+}
 .container-button {
     position: fixed;
     right: 30px;
