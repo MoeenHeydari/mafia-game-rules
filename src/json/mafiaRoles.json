@@ -1,0 +1,71 @@
+[
+    { 
+        "id": 101,
+        "name": "Godfather",
+        "classification": "mafia",
+        "alignment": "Mafia (Killing)",
+        "description": "You can't be killed at night. If there is a Mafioso he will attack the target instead of you. You will appear to be a Town member to the Sheriff. You can talk with the other Mafia at night.",
+        "img": "../assets/images/roles/Godfather.png",
+        "href": "/mafiaRoles/Godfather"
+    },
+
+    { 
+        "id": 102,
+        "name": "Mafia",
+        "classification": "mafia",
+        "alignment": "Mafia (Killing)",
+        "description": "You can kill if the Godfather doesn't give you orders. If the Godfather dies you will become the next Godfather. You can talk with the other Mafia at night.",
+        "img": "../assets/images/roles/Mafia.png",
+        "href": "/mafiaRoles/Mafia"
+    },
+
+    { 
+        "id": 103,
+        "name": "Consort",
+        "classification": "mafia",
+        "alignment": "Mafia (Support)",
+        "description": "Distraction blocks your target from using their role's night ability. If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
+        "img": "../assets/images/roles/Consort.png",
+        "href": "/mafiaRoles/Consort"
+    },
+
+    { 
+        "id": 104,
+        "name": "Framer",
+        "classification": "mafia",
+        "alignment": "Mafia (Deception)",
+        "description": "If your target is investigated they will appear to be a member of the Mafia. If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
+        "img": "../assets/images/roles/Framer.png",
+        "href": "/mafiaRoles/Framer"
+    },
+
+    { 
+        "id": 105,
+        "name": "Janitor",
+        "classification": "mafia",
+        "alignment": "Mafia (Deception)",
+        "description": "If your target dies their role and last will won't be revealed to the town. Only you will see the cleaned targets role and last will. You may only perform 3 cleanings. If there are no kill capable Mafia roles left you will become a Mafioso.",
+        "img": "../assets/images/roles/Janitor.png",
+        "href": "/mafiaRoles/Janitor"
+    },
+
+    { 
+        "id": 106,
+        "name": "Silencer",
+        "classification": "mafia",
+        "alignment": "Mafia (Support)",
+        "description": "Blackmailed targets can not talk during the day. If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
+        "img": "../assets/images/roles/Silencer.png",
+        "href": "/mafiaRoles/Silencer"
+    },
+
+    { 
+        "id": 107,
+        "name": "Consigliere",
+        "classification": "mafia",
+        "alignment": "Mafia (Support)",
+        "description": "If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
+        "img": "../assets/images/roles/Consigliere.png",
+        "href": "/mafiaRoles/Consigliere"
+    }
+]
