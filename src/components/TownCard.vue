@@ -2,11 +2,12 @@
     <header-view></header-view>
 
     <!-- Icons to go to the previous and next pages -->
-    <arrows-view :id="id"></arrows-view>
+    <arrows-view></arrows-view>
 
     <!-- Based on the Json file, the cards related to the roles will be arranged -->
     <div v-for="townRole in townRoles" :key="townRole">
         <div v-if="townRole.id === id">
+            
             <div class="card">
                 <img :src="require(`@/assets/images/roles/${townRole.name}.png`)" />
             </div>
@@ -17,7 +18,7 @@
             <p>{{ townRole.description }}</p>
         </div>
     </div>
-
+    
 </template>
   
 <script>
@@ -36,7 +37,7 @@ export default {
         HeaderView,
         ArrowsView
     },
-    props: ["id"],
+    props: ["id"]
 } 
 </script>
 
@@ -61,6 +62,7 @@ p {
 img {
     max-width: 80%;
     cursor: pointer;
+    border-radius: 30px;
 }
 </style>
   

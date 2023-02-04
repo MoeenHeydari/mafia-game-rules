@@ -21,6 +21,36 @@
 
     { 
         "id": 103,
+        "name": "Assassin",
+        "classification": "mafia",
+        "alignment": "Mafia (Killing)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Assassin.png",
+        "href": "/mafiaRoles/Assassin"
+    },
+
+    { 
+        "id": 104,
+        "name": "Bomber",
+        "classification": "mafia",
+        "alignment": "Mafia (Killing)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Bomber.png",
+        "href": "/mafiaRoles/Bomber"
+    },
+
+    { 
+        "id": 105,
+        "name": "Saboteur",
+        "classification": "mafia",
+        "alignment": "Mafia (Killing)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Saboteur.png",
+        "href": "/mafiaRoles/Saboteur"
+    },
+
+    { 
+        "id": 106,
         "name": "Consort",
         "classification": "mafia",
         "alignment": "Mafia (Support)",
@@ -28,9 +58,29 @@
         "img": "../assets/images/roles/Consort.png",
         "href": "/mafiaRoles/Consort"
     },
+    
+    { 
+        "id": 107,
+        "name": "Consigliere",
+        "classification": "mafia",
+        "alignment": "Mafia (Support)",
+        "description": "If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
+        "img": "../assets/images/roles/Consigliere.png",
+        "href": "/mafiaRoles/Consigliere"
+    },
 
     { 
-        "id": 104,
+        "id": 108,
+        "name": "Spy",
+        "classification": "mafia",
+        "alignment": "Mafia (Support)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Spy.png",
+        "href": "/mafiaRoles/Spy"
+    },
+
+    { 
+        "id": 109,
         "name": "Framer",
         "classification": "mafia",
         "alignment": "Mafia (Deception)",
@@ -40,7 +90,7 @@
     },
 
     { 
-        "id": 105,
+        "id": 110,
         "name": "Janitor",
         "classification": "mafia",
         "alignment": "Mafia (Deception)",
@@ -48,9 +98,19 @@
         "img": "../assets/images/roles/Janitor.png",
         "href": "/mafiaRoles/Janitor"
     },
+    
+    { 
+        "id": 111,
+        "name": "Mistress",
+        "classification": "mafia",
+        "alignment": "Mafia (Deception)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Mistress.png",
+        "href": "/mafiaRoles/Mistress"
+    },
 
     { 
-        "id": 106,
+        "id": 112,
         "name": "Silencer",
         "classification": "mafia",
         "alignment": "Mafia (Support)",
@@ -60,12 +120,22 @@
     },
 
     { 
-        "id": 107,
-        "name": "Consigliere",
+        "id": 113,
+        "name": "Terrorist",
         "classification": "mafia",
         "alignment": "Mafia (Support)",
-        "description": "If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
-        "img": "../assets/images/roles/Consigliere.png",
-        "href": "/mafiaRoles/Consigliere"
+        "description": "coming soon",
+        "img": "../assets/images/roles/Terrorist.png",
+        "href": "/mafiaRoles/Terrorist"
+    },
+
+    { 
+        "id": 114,
+        "name": "Lawyer",
+        "classification": "mafia",
+        "alignment": "Mafia (Support)",
+        "description": "coming soon",
+        "img": "../assets/images/roles/Lawyer.png",
+        "href": "/mafiaRoles/Lawyer"
     }
 ]
