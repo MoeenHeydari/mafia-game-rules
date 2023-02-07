@@ -14,7 +14,7 @@
         "name": "Poisoner",
         "classification": "neutral",
         "alignment": "Neutral (Killing)",
-        "description": "Your poisons take one day to take effect. Poison can be removed by Heals. With the Necronomicon, your poison can no longer be Healed.",
+        "description": "The poisoner is an neutral killer who wakes up every night and chooses one person, the target person is poisoned and will be killed one night later if he or she is not cured by the doctor or the guardian angel on the same night or the next night.",
         "img": "../assets/images/roles/Poisoner.png",
         "href": "/neutralRoles/Poisoner"
     },
@@ -24,7 +24,7 @@
         "name": "Ted",
         "classification": "neutral",
         "alignment": "Neutral (Killing)",
-        "description": "coming soon",
+        "description": "Ted and Tommy are independent killers of the game who are not aware of each other's identity, but they are each other's friends, and if each of them wins, both of them will win. The function of these two is that on odd nights, Ted wakes up and on even nights, Tommy wakes up and kills one person.",
         "img": "../assets/images/roles/Ted.png",
         "href": "/neutralRoles/Ted"
     },
@@ -34,7 +34,7 @@
         "name": "Tommy",
         "classification": "neutral",
         "alignment": "Neutral (Killing)",
-        "description": "coming soon",
+        "description": "Ted and Tommy are independent killers of the game who are not aware of each other's identity, but they are each other's friends, and if each of them wins, both of them will win. The function of these two is that on odd nights, Ted wakes up and on even nights, Tommy wakes up and kills one person.",
         "img": "../assets/images/roles/Tommy.png",
         "href": "/neutralRoles/Tommy"
     },
@@ -44,7 +44,7 @@
         "name": "MassMurderer",
         "classification": "neutral",
         "alignment": "Neutral (Killing)",
-        "description": "coming soon",
+        "description": "The Mass Murderer is an independently aligned role that can kill anyone who visits a location (i.e. a certain player) at night. The Mass Murderer may not target himself on consecutive nights",
         "img": "../assets/images/roles/MassMurderer.png",
         "href": "/neutralRoles/MassMurderer"
     },
@@ -54,7 +54,7 @@
         "name": "Cowboy",
         "classification": "neutral",
         "alignment": "Neutral (Killing)",
-        "description": "coming soon",
+        "description": "The cowboy is one of the neutral killers of the game who acts to kill someone in the night phase, the selected person wakes up before being killed by the game master and guesses someone as a cowboy, if his guess is correct, he lives and the cowboy will be killed instead of him.    Note: Cowboy has the ability to use his powerful shot (which has the ability to kill Godfather, Werewolf, etc.) once during the game, in which case the possibility of being guessed by his target is ruled out.               Note: Cowboy has a basic attack level as well as a basic defense level.",
         "img": "../assets/images/roles/Cowboy.png",
         "href": "/neutralRoles/Cowboy"
     },
@@ -64,7 +64,7 @@
         "name": "Cannibal",
         "classification": "neutral",
         "alignment": "Neutral (Killing)",
-        "description": "coming soon",
+        "description": "Cannibal is one of the neutral killers of the game, who is obliged to kill one of the players every night. During the game, he can only not kill anyone for one night, and if he repeats (not killing anyone), he will die himself.",
         "img": "../assets/images/roles/Cannibal.png",
         "href": "/neutralRoles/Cannibal"
     },
@@ -104,7 +104,7 @@
         "name": "Plaguebearer",
         "classification": "neutral",
         "alignment": "Neutral (Chaos)",
-        "description": "Infected players spread the plague on visiting or being visited. Infection cannot be protected against or removed.",
+        "description": "Plaguebearer is one of the independents of the game who wakes up every night and chooses one person, the person who is chosen and the person who comes to the plague is infected with the plague and if he meets someone the next night or someone meets him , he also gets the plague, when all the living people in the game have the plague, the plague will win the game.",
         "img": "../assets/images/roles/Plaguebearer.png",
         "href": "/neutralRoles/Plaguebearer"
     },
@@ -124,7 +124,7 @@
         "name": "Rouge",
         "classification": "neutral",
         "alignment": "Neutral (Chaos)",
-        "description": "coming soon",
+        "description": "Rogue is one of the neutral of the game who chooses a person in the night phase, then the master tells her the role of the desired person, she can use that person's ability the next night and then choose another person to repeat this procedure.",
         "img": "../assets/images/roles/Rouge.png",
         "href": "/neutralRoles/Rouge"
     },

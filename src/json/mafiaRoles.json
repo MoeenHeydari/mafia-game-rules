@@ -24,7 +24,7 @@
         "name": "Assassin",
         "classification": "mafia",
         "alignment": "Mafia (Killing)",
-        "description": "coming soon",
+        "description": "Assassin is a member of the mafia group who wakes up every night with the mafia team, she is able to shoot independently from the mafia's arrow once during the game.",
         "img": "../assets/images/roles/Assassin.png",
         "href": "/mafiaRoles/Assassin"
     },
@@ -34,7 +34,7 @@
         "name": "Bomber",
         "classification": "mafia",
         "alignment": "Mafia (Killing)",
-        "description": "coming soon",
+        "description": "The Bomber is mostly used in setups where the mafia must assign their nightkill to be carried out by a specific member of their team, making that person vulnerable to a Bomb. If the mafia nightkill is not assigned to any specific player, then sometimes the host will randomly choose a member of the mafia team to die, if they use their nightkill on the Bomb.",
         "img": "../assets/images/roles/Bomber.png",
         "href": "/mafiaRoles/Bomber"
     },
@@ -44,7 +44,7 @@
         "name": "Saboteur",
         "classification": "mafia",
         "alignment": "Mafia (Killing)",
-        "description": "coming soon",
+        "description": "The saboteur is a member of the mafia group who wakes up every night with the mafia team and chooses one person, if the chosen person is a sniper, if the sniper shoots in the same night, his bullet will hit himself, if the chosen person is a gunsmith gun if he shoots the next day, his arrow will hit himself.",
         "img": "../assets/images/roles/Saboteur.png",
         "href": "/mafiaRoles/Saboteur"
     },
@@ -74,7 +74,7 @@
         "name": "Spy",
         "classification": "mafia",
         "alignment": "Mafia (Support)",
-        "description": "coming soon",
+        "description": "Spy is a member of the mafia team, who wakes up with the mafia on the night of introduction, during the game, he wakes up after all the players during the game and chooses one person, then the master informs him what the desired person will go to this night. Someone is gone. Also, on even nights, he wakes up with the mafia.",
         "img": "../assets/images/roles/Spy.png",
         "href": "/mafiaRoles/Spy"
     },
@@ -104,7 +104,7 @@
         "name": "Mistress",
         "classification": "mafia",
         "alignment": "Mafia (Deception)",
-        "description": "coming soon",
+        "description": "The mistress is a member of the mafia group, if killed, the mafia team will be able to fire two shots at the same time the next night.",
         "img": "../assets/images/roles/Mistress.png",
         "href": "/mafiaRoles/Mistress"
     },
@@ -113,7 +113,7 @@
         "id": 112,
         "name": "Silencer",
         "classification": "mafia",
-        "alignment": "Mafia (Support)",
+        "alignment": "Mafia (SideTeammate)",
         "description": "Blackmailed targets can not talk during the day. If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
         "img": "../assets/images/roles/Silencer.png",
         "href": "/mafiaRoles/Silencer"
@@ -123,8 +123,8 @@
         "id": 113,
         "name": "Terrorist",
         "classification": "mafia",
-        "alignment": "Mafia (Support)",
-        "description": "coming soon",
+        "alignment": "Mafia (SideTeammate)",
+        "description": "The terrorist is a member of the mafia team, but he does not wake up at night. The terrorist can announce to the master at any moment of the day that he wants to leave the game with one of the players (or in other words, blow himself up with another player) after This action, if the person chosen by the terrorist is a simple citizen, senior citizen, or godfather, he will survive and the terrorist will leave the game alone, otherwise both players will leave the game.",
         "img": "../assets/images/roles/Terrorist.png",
         "href": "/mafiaRoles/Terrorist"
     },
@@ -133,8 +133,8 @@
         "id": 114,
         "name": "Lawyer",
         "classification": "mafia",
-        "alignment": "Mafia (Support)",
-        "description": "coming soon",
+        "alignment": "Mafia (SideTeammate)",
+        "description": "Lawyer is a member of the mafia team who wakes up independently in the night phase and selects a person, the inquiry of the selected person is negative in this night, also the lawyer can decide whether to vote for the selected person on the next day or not. .",
         "img": "../assets/images/roles/Lawyer.png",
         "href": "/mafiaRoles/Lawyer"
     }

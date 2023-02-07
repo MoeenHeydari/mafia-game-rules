@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.classification {
+    width: 150px;
+    height: 150px;
+    background-color: map-get($colors,"yellow") !important;
+    border-radius: 50%;
+    margin: 20px;
+    display: flex;
+    box-shadow: 0px 5px #747474;
+    &:hover {
+        background-color: map-get($colors,"orange") !important;
+        
+    }
+    img {
+        max-width: 70%;
+        margin: auto;
+    }
+}

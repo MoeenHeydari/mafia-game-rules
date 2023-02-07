@@ -1,6 +1,6 @@
 <template>
 
-    <header-view></header-view>
+    <header-view id="top"></header-view>
     <main>
         <h2>GAME OVERVIEW:</h2>
         <p>
@@ -21,6 +21,7 @@
     
     </main>
     <scroll-up></scroll-up>
+    <footer-view></footer-view>
 </template>
 
 <script>
@@ -28,33 +29,20 @@
 
 import HeaderView from '@/components/HeaderView.vue'
 import ScrollUp from '@/components/ScrollUp.vue';
+import FooterView from '@/components/FooterView.vue';
 
 export default {
     name: 'GameDescription',
     components: {
         HeaderView,
-        ScrollUp
+        ScrollUp,
+        FooterView
     }
 }
 </script>
 
 <style scope>
-template {
-    scroll-behavior: smooth
-}
-main {
-    width: 70%;
-    margin: auto;
-}
-p {
-    text-align: justify;
-    font-size: 18pt;
-    color: rgb(124, 158, 140);
-}
 
-h2 {
-    text-align: left;
-    color: rgb(181, 238, 208);
-}
+
 
 </style>

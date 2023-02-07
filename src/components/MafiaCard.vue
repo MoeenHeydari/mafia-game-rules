@@ -17,12 +17,13 @@
             <p>{{ mafiaRole.description }}</p>
         </div>
     </div>
-
+    <footer-view></footer-view>
 </template>
   
 <script>
 import HeaderView from '@/components/HeaderView.vue'
 import ArrowsView from '@/components/ArrowsView.vue'
+import FooterView from '@/components/FooterView.vue'
 import json from '@/json/mafiaRoles.json'
 
 export default {
@@ -34,34 +35,13 @@ export default {
     name: 'MafiaCard',
     components: {
         HeaderView,
-        ArrowsView
+        ArrowsView,
+        FooterView,
     },
     props: ["id"]
 } 
 </script>
 
 <style scoped>
-.card {
-    width: 400px;
-    height: auto;
-    margin: auto;
-}
-
-h2, h3 {
-    text-align: center;
-    color: rgb(148, 38, 38);
-}
-
-p {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-}
-
-img {
-    max-width: 80%;
-    cursor: pointer;
-    border-radius: 30px;
-}
 </style>
   
