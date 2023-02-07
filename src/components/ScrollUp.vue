@@ -1,6 +1,6 @@
 <template>
     <div class="scrollUp">
-        <a href="#">
+        <a href="#top">
             <fa icon='chevron-circle-up'/>
         </a>
     </div>
@@ -17,12 +17,7 @@
     
 </script>
 
-<style scoped>
-
-a {
-    font-size: 30pt;
-    color: #fff;
-}
+<style lang="scss" scoped>
 
 .scrollUp {
     float: right;

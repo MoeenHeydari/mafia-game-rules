@@ -4,7 +4,7 @@
         "name": "Citizen",
         "classification": "town",
         "alignment": "Town (Townie)",
-        "description": "No ability at night just you can vote.",
+        "description": "The citizen is the core of the town team, who has no ability in the night phase, he will win the game when he has eliminated all the mafia members as well as the neutral killers from the game.",
         "img": "../assets/images/roles/Citizen.png",
         "href": "/townRoles/Citizen"
     },
@@ -14,7 +14,7 @@
         "name": "Invulnerable",
         "classification": "town",
         "alignment": "Town (Townie)",
-        "description": "coming soon",
+        "description": "Invulnerable is one of the characters of the group of citizens who will be safe from being killed by basic attack just for one night.",
         "img": "../assets/images/roles/Invulnerable.png",
         "href": "/townRoles/Invulnerable"
     },
@@ -24,7 +24,7 @@
         "name": "Traitor",
         "classification": "town",
         "alignment": "Town (Townie)",
-        "description": "coming soon",
+        "description": "The traitor is a member of the citizen team, if she is attacked by the mafia team, he is not killed, and from the next night of the game, he wakes up with the mafia members by betraying the town team and becomes a mafia.",
         "img": "../assets/images/roles/Traitor.png",
         "href": "/townRoles/Traitor"
     },
@@ -34,7 +34,7 @@
         "name": "Student",
         "classification": "town",
         "alignment": "Town (Townie)",
-        "description": "coming soon",
+        "description": "The student is one of the characters of the group of citizens, and if he is killed, the game manager announces the death of the student and the possibility of expelling two players on the current day.",
         "img": "../assets/images/roles/Student.png",
         "href": "/townRoles/Student"
     },
@@ -74,7 +74,7 @@
         "name": "Autopsist",
         "classification": "town",
         "alignment": "Town (Investigative)",
-        "description": "coming soon",
+        "description": "Autopsist is one of the characters of the group of citizens who can choose one of the people killed in the previous nights every night in order to be aware of his or her role.",
         "img": "../assets/images/roles/Autopsist.png",
         "href": "/townRoles/Autopsist"
     },
@@ -84,7 +84,7 @@
         "name": "Mason",
         "classification": "town",
         "alignment": "Town (Investigative)",
-        "description": "coming soon",
+        "description": "The Masons are a group of players that don't know each other's roles but are allowed to communicate privately with each other outside of the game thread.",
         "img": "../assets/images/roles/Mason.png",
         "href": "/townRoles/Mason"
     },
@@ -93,7 +93,7 @@
         "id": 10,
         "name": "Sniper",
         "classification": "town",
-        "alignment": "Town (Protective)",
+        "alignment": "Town (Killing)",
         "description": "If your target is attacked, both you and your attacker will die instead. If you successfully protect someone, you can't be saved from death. Your counterattack ignores night immunity.",
         "img": "../assets/images/roles/Sniper.png",
         "href": "/townRoles/Sniper"
@@ -124,7 +124,7 @@
         "name": "Gunsmith",
         "classification": "town",
         "alignment": "Town (Killing)",
-        "description": "coming soon",
+        "description": "The Gunsmith cannot pass guns to himself. The player receiving the gun will be informed of this at the beginning of the next day phase, but they will not learn who they received it from. They will also not learn if they received a fake gun (see Fabricator). A different, equally popular, version of this role is a Gunsmith that passes out regular guns that can only be used and resolved normally at night without any chance or risk of the shooter being revealed if they use the gun.",
         "img": "../assets/images/roles/Gunsmith.png",
         "href": "/townRoles/Gunsmith"
     },
@@ -154,7 +154,7 @@
         "name": "Hero",
         "classification": "town",
         "alignment": "Town (Protective)",
-        "description": "coming soon",
+        "description": "Hero is one of the characters of the group of citizens who has the ability to protect a person against any attack in the night phase.",
         "img": "../assets/images/roles/Hero.png",
         "href": "/townRoles/Hero"
     },
@@ -194,7 +194,7 @@
         "name": "Reflector",
         "classification": "town",
         "alignment": "Town (Protective)",
-        "description": "coming soon",
+        "description": "The Reflector may each night give someone a reflection shield, which will cause anyone targeting the Reflector's target to have their actions reflected back onto themselves. The reflection shield lasts only one night.",
         "img": "../assets/images/roles/Reflector.png",
         "href": "/townRoles/Reflector"
     },
@@ -204,7 +204,7 @@
         "name": "Priest",
         "classification": "town",
         "alignment": "Town (Support)",
-        "description": "coming soon",
+        "description": "The Priest is one of the characters of the group of citizens who wakes up every night after the silencer and chooses one person, if that person is chosen by the silencer on the same night, she will be saved.",
         "img": "../assets/images/roles/Priest.png",
         "href": "/townRoles/Priest"
     },
@@ -244,7 +244,7 @@
         "name": "Judge",
         "classification": "town",
         "alignment": "Town (Support)",
-        "description": "coming soon",
+        "description": "The Judge may just one night choose to kill someone who was on the lynch bandwagon during the most recent day phase.",
         "img": "../assets/images/roles/Judge.png",
         "href": "/townRoles/Judge"
     },
@@ -254,7 +254,7 @@
         "name": "Conjurer",
         "classification": "town",
         "alignment": "Town (Support)",
-        "description": "coming soon",
+        "description": "Conjurer is one of the characters of the group of citizens who wakes up every night and has the ability to summon any of the dead in the game. The summoned person can play his role on the same night if he wishes",
         "img": "../assets/images/roles/Conjurer.png",
         "href": "/townRoles/Conjurer"
     }

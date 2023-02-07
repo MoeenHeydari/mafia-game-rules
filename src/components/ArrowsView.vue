@@ -14,27 +14,6 @@
 <script>
     export default {
         name: 'ArrowsView',
-        props: {
-
-        }
+        props: {}
     }
-    
 </script>
-
-<style scoped>
-.arrows {
-    width: 99%;
-    height: auto;;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    bottom: 50px;
-}
-
-a {
-    font-size: 30pt;
-    color: #fff;
-}
-</style>
-  

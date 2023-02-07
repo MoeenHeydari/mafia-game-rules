@@ -1,42 +1,36 @@
 <template>
 
     <div>
-        <img src="../assets/images/logo.png">
+        <img class="logo" src="../assets/images/logo.png">
         <h1>Mafia Game</h1>
 
-        <router-link to="/gameDescription">Game Description</router-link>
+        <router-link to="/gameDescription">
+            <h6>Game Description</h6>
+        </router-link>
         <roles-classification></roles-classification>
+        <footer-view></footer-view>
     </div>
     
 </template>
 
 <script>
 import RolesClassification from '@/components/RolesClassification.vue'
+import FooterView from '@/components/FooterView.vue'
 
 export default {
     name: 'HomeView',
     components: {
-        RolesClassification
+        RolesClassification,
+        FooterView,
     }
 }
 </script>
 
-<style>
+<style lang="scss">
 
-body {
-    background-color: #000;
-}
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-h1{
-    color:#ffffff
-}
-
-[v-cloak] {
-    display: none;
+@import '../assets/scss/index.scss';
+.logo {
+    margin-top: 100px;
+    max-width: 250px;
 }
 </style>

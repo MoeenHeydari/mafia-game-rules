@@ -7,7 +7,7 @@
                     <img :src="require(`@/assets/images/classification/${classification.name}.webp`)" />
                 </div>
                 <p :style="(`color:${classification.color}`)">
-                    {{classification.name}}Roles
+                    {{classification.name + 'Roles'}}
                 </p>
             </router-link>
         </div>
@@ -31,33 +31,7 @@ import json from '../json/classifications.json'
     }
 </script>
 
-<style scoped>
-.container {
-    display: flex;
-    justify-content: center;
-}
-
-.classification {
-    width: 150px;
-    height: 150px;
-    background-color: #d4d4d4;
-    border-radius: 50%;
-    margin: 20px;
-    display: flex;
-    box-shadow: 0px 5px #747474;
-    cursor: pointer;
-}
-
-img {
-    max-width: 70%;
-    margin: auto;
-}
-
-p {
-    display: inline;
-    padding: 28px;
-    font-size: 18pt;
-}
+<style lang="scss" scoped>
 
 </style>
   

@@ -6,19 +6,64 @@
         <arrows-view></arrows-view>
         <h1>Mafia Roles</h1>
 
-        <!-- Creating a set of cards that are predefined in the Jason file -->
-        <div class="container">
-            <div class="card" v-for="mafiaRole in mafiaRoles" :key="mafiaRole" @click="createCard(mafiaRole.id)">   
-                <img :src="require(`@/assets/images/roles/${mafiaRole.name}.png`)" />
+        <!-- Creating sets of cards that are predefined in the Jason file -->
+        
+        <hr>
+        <h2>Mafia (Killing)</h2>
+        <div class="container-grid">
+            <div class="row gap-0 justify-flex-start">
+                <div v-for="mafiaRole in mafiaRoles" :key="mafiaRole" @click="createCard(mafiaRole.id)">
+                    <div class="card" v-if="mafiaRole.alignment === 'Mafia (Killing)'">
+                        <div class="col-6-xs col-6-sm col-6-xl">
+                            <img :src="require(`@/assets/images/roles/${mafiaRole.name}.png`)" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <h2>Mafia (Support)</h2>
+        <div class="container-grid">
+            <div class="row gap-0 justify-flex-start">
+                <div v-for="mafiaRole in mafiaRoles" :key="mafiaRole" @click="createCard(mafiaRole.id)">
+                    <div class="card" v-if="mafiaRole.alignment === 'Mafia (Support)'">
+                        <div class="col-6-xs col-6-sm col-6-xl">
+                            <img :src="require(`@/assets/images/roles/${mafiaRole.name}.png`)" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <h2>Mafia (Deception)</h2>
+        <div class="container-grid">
+            <div class="row gap-0 justify-flex-start">
+                <div v-for="mafiaRole in mafiaRoles" :key="mafiaRole" @click="createCard(mafiaRole.id)">
+                    <div class="card" v-if="mafiaRole.alignment === 'Mafia (Deception)'">
+                        <div class="col-6-xs col-6-sm col-6-xl">
+                            <img :src="require(`@/assets/images/roles/${mafiaRole.name}.png`)" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <h2>Mafia (Side Teammate)</h2>
+        <div class="container-grid">
+            <div class="row gap-0 justify-flex-start">
+                <div v-for="mafiaRole in mafiaRoles" :key="mafiaRole" @click="createCard(mafiaRole.id)">
+                    <div class="card" v-if="mafiaRole.alignment === 'Mafia (SideTeammate)'">
+                        <div class="col-6-xs col-6-sm col-6-xl">
+                            <img :src="require(`@/assets/images/roles/${mafiaRole.name}.png`)" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- a button for going back to list of roles -->
-    <div class="container-button">
-        <a class="button" v-if="showCard === true" @click="goPrevious()">  </a>
-    </div>
-
     <!-- If any of the cards clicked, only it will be shown-->
     <div v-if="showCard">
         <mafia-card :id="id"></mafia-card>
@@ -52,56 +97,12 @@ export default {
         createCard(id) {
             this.showCard = true
             this.id = id
-        },
-
-        // Function for going back to list of roles
-        goPrevious(){
-            this.showCard =! this.showCard
         }
+
     }
 }
 </script>
 
-<style scoped>
-main {
-    width : 970px;
-    height: auto;
-    margin: auto;
-}
-
-img {
-    width: 90%;
-    padding: 10px;
-    border-radius: 30px;
-}
-
-.container {
-    width: 970px;
-    height: auto;
-    margin: auto;
-}
-.card {
-    width: 300px;
-    height: auto;
-    cursor: pointer;
-    margin: auto;
-    float: left;
-}
-
-h1{
-    color:#F61A1A
-}
-
-.container-button {
-    position: fixed;
-    right: 30px;
-    top: 100px;
-}
-
-.button {
-    color: rgba(0, 0, 0, 0);
-    padding: 32px 32px;
-    cursor: pointer;
-}
+<style lang="scss" scoped>
 
 </style>
