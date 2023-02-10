@@ -3,15 +3,16 @@
     width: 300px;
     height: auto;
     margin: auto;
+    padding: 20px 0px;
     
     img {
         max-width: 80%;
         cursor: pointer;
         border-radius: $base-border-radius;
-        box-shadow: 1px 3px 0px  rgba(255, 255, 255, 0.5);
+        box-shadow: $card-box-shadow;
         &:hover{
             transform: scale(1.05);
-            transition: all 100ms;
+            transition: all 50ms;
         }
     }
 }

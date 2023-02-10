@@ -1,5 +1,5 @@
 <template>
-    <div v-if="showCard === false">
+    <div v-if="showCard === false" v-cloak>
         <header-view></header-view>
 
         <!-- Icons to go to the previous and next pages -->

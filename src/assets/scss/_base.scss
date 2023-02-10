@@ -6,12 +6,10 @@
     text-align: center;
 }
 
-
 [v-cloak] {
     display: none;
 }
   
-
 body {
     background-color: $bgColor;
 }
@@ -19,8 +17,8 @@ body {
 a {
     color: #fff;
     text-decoration: none;
-    font-size: 30pt;
-    margin-top: 50px;
+    font-size: $font-size-xxl;
+    margin-top: $margin-xxl;
     cursor: pointer;
 }
 
@@ -28,22 +26,20 @@ h1 {
     color: #fff;
 }
 
-
 h2, h3 {
     text-align: center;
-    color: $h2h3Color;
+    color: $titleColor;
 }
-
 
 p {
     text-align: center;
     width: 60%;
     margin: auto;
     text-align: justify;
-    font-size: 18pt;
-    color: rgb(124, 158, 140);
-    
+    font-size: $font-size-lg;
+    color: $paragraphColor;
 }
+
 main,
 p,
 .header,
@@ -56,11 +52,11 @@ p,
 }
 
 img {
-    border-radius: 30px;
+    border-radius: $base-border-radius;
     max-width: 90%;
     cursor: pointer;
 }
 
 hr {
-max-width: 1280px;
+    max-width: 1280px;
 }

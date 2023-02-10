@@ -6,7 +6,7 @@
 import TownCard from '@/components/TownCard.vue'
 
 export default {
-    name: 'Citizen',
+    name: 'Escort',
     components: {
         TownCard 
     }
