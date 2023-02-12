@@ -5,12 +5,10 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 
 import App from './App.vue';
 import router from './router';
-import store from './store';
 
 library.add(fas)
 
 createApp(App)
 .component('fa', FontAwesomeIcon)
 .use(router)
-.use(store)
 .mount('#app');

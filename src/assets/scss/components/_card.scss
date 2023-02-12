@@ -1,9 +1,9 @@
 
 .card {
-    width: 300px;
+    max-width: 300px;
     height: auto;
     margin: auto;
-    padding: 20px 0px;
+    float: left;
     
     img {
         max-width: 80%;
@@ -17,3 +17,9 @@
     }
 }
 
+.card-single {
+    max-width: 400px;
+    height: auto;
+    margin: auto;
+    cursor: default;
+}

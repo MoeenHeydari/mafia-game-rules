@@ -6,13 +6,13 @@
 .classification {
     width: 150px;
     height: 150px;
-    background-color: map-get($colors,"yellow") !important;
+    background-color: map-get($colors,"orange-light");
     border-radius: 50%;
-    margin: 20px;
+    margin: $margin-lg;
     display: flex;
     box-shadow: 0px 5px #747474;
     &:hover {
-        background-color: map-get($colors,"orange") !important;
+        background-color: map-get($colors,"orange");
         
     }
     img {
