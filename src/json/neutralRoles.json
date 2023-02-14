@@ -34,7 +34,7 @@
         "name": "Tommy",
         "classification": "neutral",
         "alignment": "Neutral (Killing)",
-        "description": "Ted and Tommy are independent killers of the game who are not aware of each other's identity, but they are each other's friends, and if each of them wins, both of them will win. The function of these two is that on odd nights, Ted wakes up and on even nights, Tommy wakes up and kills one person.",
+        "description": "Tommy and Ted are independent killers of the game who are not aware of each other's identity, but they are each other's friends, and if each of them wins, both of them will win. The function of these two is that on odd nights, Ted wakes up and on even nights, Tommy wakes up and kills one person.",
         "img": "../assets/images/roles/Tommy.png",
         "href": "/neutralRoles/Tommy"
     },

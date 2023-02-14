@@ -4,7 +4,9 @@ import GameDescription from '../views/GameDescription.vue'
 import TownRoles from '../views/TownRoles.vue'
 import MafiaRoles from '../views/MafiaRoles.vue'
 import NeutralRoles from '../views/NeutralRoles.vue'
-import Citizen from '../views/roles/Citizen.vue'
+import TownCard from '../views/TownCard.vue'
+import MafiaCard from '../views/MafiaCard.vue'
+import NeutralCard from '../views/NeutralCard.vue'
 
 
 const routes = [
@@ -19,25 +21,36 @@ const routes = [
         component: GameDescription
     },
     {
-        path: '/townRoles',
+        path: '/roles/townRoles',
         name: 'townRoles',
         component: TownRoles
     },
     {
-        path: '/mafiaRoles',
+        path: '/roles/mafiaRoles',
         name: 'mafiaRoles',
         component: MafiaRoles
     },
     {
-        path: '/neutralRoles',
+        path: '/roles/neutralRoles',
         name: 'neutralRoles',
         component: NeutralRoles
     },
     {
-        path: '/townRoles/Citizen',
-        name: 'citizen',
-        component: Citizen
+        path: '/roles/townRoles/:cardName',
+        name: 'townCard',
+        component: TownCard
+    },
+    {
+        path: '/roles/mafiaRoles/:cardName',
+        name: 'mafiaCard',
+        component: MafiaCard
+    },
+    {
+        path: '/roles/neutralRoles/:cardName',
+        name: 'neutralCard',
+        component: NeutralCard
     }
+  
 ]
 
 const router = createRouter({

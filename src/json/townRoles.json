@@ -6,7 +6,7 @@
         "alignment": "Town (Townie)",
         "description": "The citizen is the core of the town team, who has no ability in the night phase, he will win the game when he has eliminated all the mafia members as well as the neutral killers from the game.",
         "img": "../assets/images/roles/Citizen.png",
-        "href": "/townRoles/Citizen"
+        "href": "/roles/townRoles/Citizen"
     },
 
     { 
@@ -16,7 +16,7 @@
         "alignment": "Town (Townie)",
         "description": "Invulnerable is one of the characters of the group of citizens who will be safe from being killed by basic attack just for one night.",
         "img": "../assets/images/roles/Invulnerable.png",
-        "href": "/townRoles/Invulnerable"
+        "href": "/roles/townRoles/Invulnerable"
     },
 
     { 
@@ -26,7 +26,7 @@
         "alignment": "Town (Townie)",
         "description": "The traitor is a member of the citizen team, if she is attacked by the mafia team, he is not killed, and from the next night of the game, he wakes up with the mafia members by betraying the town team and becomes a mafia.",
         "img": "../assets/images/roles/Traitor.png",
-        "href": "/townRoles/Traitor"
+        "href": "/roles/townRoles/Traitor"
     },
 
     { 
@@ -36,7 +36,7 @@
         "alignment": "Town (Townie)",
         "description": "The student is one of the characters of the group of citizens, and if he is killed, the game manager announces the death of the student and the possibility of expelling two players on the current day.",
         "img": "../assets/images/roles/Student.png",
-        "href": "/townRoles/Student"
+        "href": "/roles/townRoles/Student"
     },
 
     { 
@@ -46,7 +46,7 @@
         "alignment": "Town (Investigative)",
         "description": "You will know if your target is suspicious, except for the Godfather.",
         "img": "../assets/images/roles/Detective.png",
-        "href": "/townRoles/Detective"
+        "href": "/roles/townRoles/Detective"
     },
 
     { 
@@ -56,7 +56,7 @@
         "alignment": "Town (Investigative)",
         "description": "Watch one person at night to see who visits them.",
         "img": "../assets/images/roles/Lookout.png",
-        "href": "/townRoles/Lookout"
+        "href": "/roles/townRoles/Lookout"
     },
 
     { 
@@ -66,7 +66,7 @@
         "alignment": "Town (Investigative)",
         "description": "Track one person at night to see who they visit.",
         "img": "../assets/images/roles/Tracker.png",
-        "href": "/townRoles/Tracker"
+        "href": "/roles/townRoles/Tracker"
     },
 
     { 
@@ -76,7 +76,7 @@
         "alignment": "Town (Investigative)",
         "description": "Autopsist is one of the characters of the group of citizens who can choose one of the people killed in the previous nights every night in order to be aware of his or her role.",
         "img": "../assets/images/roles/Autopsist.png",
-        "href": "/townRoles/Autopsist"
+        "href": "/roles/townRoles/Autopsist"
     },
 
     { 
@@ -86,7 +86,7 @@
         "alignment": "Town (Investigative)",
         "description": "The Masons are a group of players that don't know each other's roles but are allowed to communicate privately with each other outside of the game thread.",
         "img": "../assets/images/roles/Mason.png",
-        "href": "/townRoles/Mason"
+        "href": "/roles/townRoles/Mason"
     },
 
     { 

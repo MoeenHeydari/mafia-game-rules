@@ -4,7 +4,7 @@
         "name": "Town",
         "img": "../assets/images/classification/Town.webp",
         "isPositive": true,
-        "href": "/townRoles",
+        "href": "/roles/townRoles",
         "color": "#54FDA3"
     },
 
@@ -13,7 +13,7 @@
         "name": "Mafia",
         "img": "../assets/images/classification/Mafia.webp",
         "isPositive": false,
-        "href": "/mafiaRoles",
+        "href": "/roles/mafiaRoles",
         "color":"#F61A1A"
     },
 
@@ -22,7 +22,7 @@
         "name": "Neutral",
         "img": "../assets/images/classification/Neutral.webp",
         "isPositive": false,
-        "href": "/neutralRoles",
+        "href": "/roles/neutralRoles",
         "color":"#7D7D7D"
     }
 ]

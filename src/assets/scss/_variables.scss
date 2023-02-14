@@ -1,44 +1,37 @@
 
 
 // theme colors
-$bgColor : rgb(8, 17, 26);
+$bgColor : rgb(16, 30, 43);
 $citizenColor : #54FDA3;
 $mafiaColor : #F61A1A;
 $neutralColor :#7D7D7D;
-$h2h3Color : #e6e619;
-$primary: #326dee;
-$secondary: #1ac886;
-$error: #d32752;
-$info: #f6c31c;
+$titleColor : #e6e619;
+$paragraphColor : #7c8d9e;;
+
 
 // color palette
 $colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "error": $error,
-  "info": $info,
-  "blue": #1919e6,
-  "red": #e61919,
-  "yellow": #e6e619,
-  "green": #19e635,
+  "orange-light": #ffcc5d,
   "orange": #ffa600,
-  "purple": #9900ff,
-  "gray": #808080,
-  "black": black,
-  "white": white,
 );
 
 // spacing
-$base-padding: 0.75rem;
-$base-margin: 0.75rem;
+$base-padding: 1rem;
+$base-margin: 1rem;
+
+$margin-sm: $base-margin * 0.75;
+$margin-lg: $base-margin * 1.5;
+$margin-xl: $base-margin * 2;
+$margin-xxl: $base-margin * 3;
+
 
 // borders
 $base-border-thickness: 1px;
 $base-border-radius: 30px;
-$max-border-radius: 50%;
 
 // box-shadow
 $base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+$card-box-shadow:  1px 3px 0px  rgba(255, 255, 255, 0.5);
 
 // font sizes
 $base-font-size: 1rem;

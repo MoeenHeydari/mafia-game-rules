@@ -5,41 +5,45 @@
     <arrows-view></arrows-view>
 
     <!-- Based on the Json file, the cards related to the roles will be arranged -->
-    <div v-for="neutralRole in neutralRoles" :key="neutralRole">
-        <div v-if="neutralRole.id === id">
-            <div class="card">
-                <img :src="require(`@/assets/images/roles/${neutralRole.name}.png`)" />
+    
+        <div v-if="townCard.name">
+            <div class="card-single">
+                <img :src="require(`@/assets/images/roles/${townCard.name}.png`)" />
             </div>
            
             <h2>Alignment:</h2>
-            <p>{{ neutralRole.alignment }}</p>
+            <p>{{ townCard.alignment }}</p>
             <h3>Description:</h3>
-            <p>{{ neutralRole.description }}</p>
+            <p>{{ townCard.description }}</p>
         </div>
-    </div>
+    
     <footer-view></footer-view>
-
 </template>
   
 <script>
 import HeaderView from '@/components/HeaderView.vue'
 import ArrowsView from '@/components/ArrowsView.vue'
 import FooterView from '@/components/FooterView.vue'
-import json from '@/json/neutralRoles.json'
+import townRolesJson from '@/json/townRoles.json'
 
 export default {
-    data(){
-        return{
-            neutralRoles: json
-        }
-    },
-    name: 'NeutralCard',
+    name: 'TownCard',
     components: {
         HeaderView,
         ArrowsView,
-        FooterView
+        FooterView,
     },
-    props: ["id"]
+    data(){
+        return{
+            townCard: {},
+        }
+    },
+   
+    mounted() {
+        const townCardName = this.$route.params.cardName;
+        const townCard = townRolesJson.filter((role)=> role.name === townCardName)[0];
+        this.townCard = townCard;
+    }
 } 
 </script>
 
