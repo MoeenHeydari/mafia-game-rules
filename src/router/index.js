@@ -7,6 +7,7 @@ import NeutralRoles from '../views/NeutralRoles.vue'
 import TownCard from '../views/TownCard.vue'
 import MafiaCard from '../views/MafiaCard.vue'
 import NeutralCard from '../views/NeutralCard.vue'
+import NotFound from '../views/NotFound.vue'
 
 
 const routes = [
@@ -14,6 +15,11 @@ const routes = [
         path: '/',
         name: 'home',
         component: HomeView
+    },
+    {
+        path: '/:catchAll(.*)',
+        name: 'notFound',
+        component: NotFound
     },
     {
         path: '/gameDescription',
