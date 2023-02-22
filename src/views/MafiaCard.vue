@@ -6,15 +6,15 @@
 
     <!-- Based on the Json file, the cards related to the roles will be arranged -->
     
-        <div v-if="mafiaCard.name">
+        <div v-if="this.card[0].name">
             <div class="card-single">
-                <img :src="require(`@/assets/images/roles/${mafiaCard.name}.png`)" />
+                <img :src="require(`@/assets/images/roles/${this.card[0].name}.png`)" />
             </div>
            
             <h2>Alignment:</h2>
-            <p>{{ mafiaCard.alignment }}</p>
+            <p>{{ this.card[0].alignment }}</p>
             <h3>Description:</h3>
-            <p>{{ mafiaCard.description }}</p>
+            <p>{{ this.card[0].description }}</p>
         </div>
     
     <footer-view></footer-view>
@@ -24,7 +24,8 @@
 import HeaderView from '@/components/HeaderView.vue'
 import ArrowsView from '@/components/ArrowsView.vue'
 import FooterView from '@/components/FooterView.vue'
-import mafiaRolesJson from '@/json/mafiaRoles.json'
+
+import { getCards } from '@/utils/dataHandler'
 
 export default {
     name: 'MafiaCard',
@@ -35,14 +36,8 @@ export default {
     },
     data(){
         return{
-            mafiaCard: {},
+            card: getCards(this.$route.params.cardName, 'mafia')   
         }
-    },
-   
-    mounted() {
-        const mafiaCardName = this.$route.params.cardName;
-        const mafiaCard = mafiaRolesJson.filter((role)=> role.name === mafiaCardName)[0];
-        this.mafiaCard = mafiaCard;
     }
 } 
 </script>

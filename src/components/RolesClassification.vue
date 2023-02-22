@@ -16,18 +16,16 @@
 </template>
   
 <script>
-import json from '../json/classifications.json'
+
+import { getClassifications } from '@/utils/dataHandler'
 
     export default {
         data(){
             return{
-                classifications: json,  
+                classifications: getClassifications()   
             }
         },
         name: 'RolesClassification',
-        props: {
-
-        }
     }
 </script>
 
