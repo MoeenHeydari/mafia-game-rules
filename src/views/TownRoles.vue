@@ -13,10 +13,10 @@
         <div class="container-grid">
             <div class="row gap-0 justify-flex-start">
                 <div class="col-6-xs col-6-sm col-6-xl">
-                    <div class="card" v-for="townRole in townRoles" :key="townRole">  
-                        <div v-if="townRole.alignment === alignment">
-                            <router-link :to="{ name: 'townCard', params:{ cardName: townRole.name }}">
-                                <img :src="require(`@/assets/images/roles/${townRole.name}.png`)" />
+                    <div class="card" v-for="role in roles" :key="role">
+                        <div v-if="role.alignment === alignment">
+                            <router-link :to="{ name: 'townCard', params:{ cardName: role.name }}">
+                                <img :src="require(`@/assets/images/roles/${role.name}.png`)" />
                             </router-link>
                         </div>
                     </div>
@@ -25,44 +25,25 @@
         </div>
     </div>
 
-
 </template>
 
 <script>
 import HeaderView from '@/components/HeaderView.vue'
 import ArrowsView from '@/components/ArrowsView.vue'
-import townRolesJson from '../json/townRoles.json'
 
+import { getRoles, getAlignments } from '@/utils/dataHandler'
+    
 export default {
     data(){
         return{
-            townRoles: townRolesJson,
-            alignments: []
+            roles: getRoles('town'),
+            alignments: getAlignments('town')
         }
     },
-
-    name: 'TownRoles',
     components: {
         HeaderView,
         ArrowsView,
-    },
-    
-    mounted() {
-        // The function to create the list of alignments
-        const newAlignment = []
-        for (var i = 0 ; i <townRolesJson.length ; i++ ) {
-            const exists = newAlignment.includes(townRolesJson[i].alignment);
-            // To remove repeated alignments
-            if (!exists) {
-                newAlignment.push(townRolesJson[i].alignment);
-            }        
-        }
-        this.alignments = newAlignment
     }
 } 
 
 </script>
-
-<style scoped>
-
-</style>

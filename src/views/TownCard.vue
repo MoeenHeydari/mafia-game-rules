@@ -6,15 +6,15 @@
 
     <!-- Based on the Json file, the cards related to the roles will be arranged -->
     
-        <div v-if="townCard.name">
+        <div v-if="this.card[0].name">
             <div class="card-single">
-                <img :src="require(`@/assets/images/roles/${townCard.name}.png`)" />
+                <img :src="require(`@/assets/images/roles/${this.card[0].name}.png`)" />
             </div>
            
             <h2>Alignment:</h2>
-            <p>{{ townCard.alignment }}</p>
+            <p>{{ this.card[0].alignment }}</p>
             <h3>Description:</h3>
-            <p>{{ townCard.description }}</p>
+            <p>{{ this.card[0].description }}</p>
         </div>
     
     <footer-view></footer-view>
@@ -24,7 +24,8 @@
 import HeaderView from '@/components/HeaderView.vue'
 import ArrowsView from '@/components/ArrowsView.vue'
 import FooterView from '@/components/FooterView.vue'
-import townRolesJson from '@/json/townRoles.json'
+
+import { getCards } from '@/utils/dataHandler'
 
 export default {
     name: 'TownCard',
@@ -35,14 +36,8 @@ export default {
     },
     data(){
         return{
-            townCard: {},
+            card: getCards(this.$route.params.cardName, 'town')   
         }
-    },
-   
-    mounted() {
-        const townCardName = this.$route.params.cardName;
-        const townCard = townRolesJson.filter((role)=> role.name === townCardName)[0];
-        this.townCard = townCard;
     }
 } 
 </script>
