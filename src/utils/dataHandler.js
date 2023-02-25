@@ -37,6 +37,7 @@ function getClassifications() {
     return classifications
 }
 
+// The function for navigation through card pages
 function changePage(id, x, type) {
     const newId = id + x;
     const newRole = getRoles(type).find(role => role.id === newId).name
