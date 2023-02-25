@@ -1,11 +1,7 @@
 <template>
     <header-view></header-view>
 
-    <!-- Icons to go to the previous and next pages -->
-    <arrows-view></arrows-view>
-
     <!-- Based on the Json file, the cards related to the roles will be arranged -->
-    
         <div v-if="this.card[0].name">
             <div class="card-single">
                 <img :src="require(`@/assets/images/roles/${this.card[0].name}.png`)" />
@@ -16,32 +12,46 @@
             <h3>Description:</h3>
             <p>{{ this.card[0].description }}</p>
         </div>
-    
+        
+        <div class="arrows">
+            <button class="changePageButton" @click='changePage(-1)'>
+                <fa icon='chevron-circle-left'/>
+            </button>
+            <button class="changePageButton" @click='changePage(+1)'>
+                <fa icon='chevron-circle-right'/>
+            </button>
+        </div>
+
     <footer-view></footer-view>
 </template>
   
 <script>
 import HeaderView from '@/components/HeaderView.vue'
-import ArrowsView from '@/components/ArrowsView.vue'
 import FooterView from '@/components/FooterView.vue'
 
-import { getCards } from '@/utils/dataHandler'
+import { getCards, getRoles } from '@/utils/dataHandler'
 
 export default {
     name: 'TownCard',
     components: {
         HeaderView,
-        ArrowsView,
-        FooterView,
+        FooterView
     },
     data(){
         return{
-            card: getCards(this.$route.params.cardName, 'town')   
+            card: getCards(this.$route.params.cardName, 'town').card,
+            id: getCards(this.$route.params.cardName, 'town').roleId
         }
+    },
+    methods: {
+        changePage(x) {
+            const newId = this.id + x;
+            const newRole = getRoles('town').find(role => role.id === newId).name
+            window.location = newRole
+        } 
     }
 } 
 </script>
 
-<style scoped>
+<style>
 </style>
-  
