@@ -10,9 +10,10 @@ function getRoles(type) {
 function getCards(name, type) { // e.g. (citizen, town)
     const card = []
     const cardName = name
-    const checkedCard = getRoles(type).filter((role) => role.name === cardName)[0]
+    const roleId = getRoles(type).find(role => role.name === cardName).id
+    const checkedCard = getRoles(type).filter((role)=> role.name === cardName)[0]
     card.push(checkedCard)
-    return card
+    return {card, roleId}
 }
 
 // The function to create the list of alignments
@@ -36,9 +37,17 @@ function getClassifications() {
     return classifications
 }
 
+// The function for navigation through card pages
+function changePage(id, x, type) {
+    const newId = id + x;
+    const newRole = getRoles(type).find(role => role.id === newId).name
+    window.location = newRole
+}
+
 module.exports = { 
     getRoles, 
     getCards,
     getAlignments,
-    getClassifications
+    getClassifications,
+    changePage
 }
