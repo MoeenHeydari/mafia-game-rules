@@ -1,7 +1,7 @@
 {
     "classifications": [
         { 
-            "index": 1,
+            "index": 0,
             "name": "Town",
             "img": "../assets/images/classification/Town.webp",
             "isPositive": true,
@@ -10,7 +10,7 @@
         },
     
         { 
-            "index": 2,
+            "index": 1,
             "name": "Mafia",
             "img": "../assets/images/classification/Mafia.webp",
             "isPositive": false,
@@ -19,7 +19,7 @@
         },
     
         { 
-            "index": 3,
+            "index": 2,
             "name": "Neutral",
             "img": "../assets/images/classification/Neutral.webp",
             "isPositive": false,

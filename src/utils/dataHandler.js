@@ -37,8 +37,26 @@ function getClassifications() {
     return classifications
 }
 
+// The function to go to the upper page
+function goUpperPage(classification) {
+    window.location.pathname = 'roles/' + classification + 'Roles'
+}
+
+// The function for navigation through roles pages
+function shiftRolesPage(index, x){
+    
+    const newIndex = index + x
+    if (newIndex === 0 || newIndex === 3){
+        window.location = 'townRoles'
+    } if (newIndex === 1) {
+        window.location = 'mafiaRoles'
+    } if (newIndex === 2 || newIndex === -1) {
+        window.location = 'neutralRoles'
+    }
+} 
+
 // The function for navigation through card pages
-function changePage(id, x, type) {
+function changeCardPage(id, x, type) {
     const newId = id + x;
     const newRole = getRoles(type).find(role => role.id === newId).name
     window.location = newRole
@@ -49,5 +67,7 @@ module.exports = {
     getCards,
     getAlignments,
     getClassifications,
-    changePage
+    goUpperPage,
+    shiftRolesPage,
+    changeCardPage,
 }
