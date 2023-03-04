@@ -25,24 +25,37 @@
         </div>
     </div>
 
+    <div class="arrows">
+        <button class="changePageButton" @click='shiftRolesPage(this.index, -1)'>
+            <fa icon='chevron-circle-left'/>
+        </button>
+        <button class="changePageButton" @click='shiftRolesPage(this.index, +1)'>
+            <fa icon='chevron-circle-right'/>
+        </button>
+    </div>
+
 </template>
 
 <script>
 import HeaderView from '@/components/HeaderView.vue'
 import ArrowsView from '@/components/ArrowsView.vue'
 
-import { getRoles, getAlignments } from '@/utils/dataHandler'
+import { getRoles, getAlignments, shiftRolesPage } from '@/utils/dataHandler'
     
 export default {
     data(){
         return{
             roles: getRoles('mafia'),
-            alignments: getAlignments('mafia')
+            alignments: getAlignments('mafia'),
+            index: 1
         }
     },
     components: {
         HeaderView,
         ArrowsView,
+    },
+    methods:{
+        shiftRolesPage
     }
 } 
 
