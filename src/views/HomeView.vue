@@ -7,7 +7,7 @@
         <router-link to="/gameDescription">
             <h6>Game Description</h6>
         </router-link>
-        <roles-classification></roles-classification>
+        <roles-classification></roles-classification>  
         <footer-view></footer-view>
     </div>
      
