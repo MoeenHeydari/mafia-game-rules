@@ -1,6 +1,6 @@
 <template>
 
-    <div v-cloak>
+    <div v-cloak style="border: 3px solid red">
         <img class="logo" src="../assets/images/logo.png">
         <h1>Mafia Game</h1>
 
