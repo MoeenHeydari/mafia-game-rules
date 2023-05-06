@@ -1,48 +1,59 @@
 <template>
     <header-view></header-view>
 
-    <!-- Icons to go to the previous and next pages -->
-    <arrows-view></arrows-view>
+    <button class="changePageButton" @click='goUpperPage(card[0].classification)'>
+        <fa icon='arrow-alt-circle-left'/>
+    </button>
 
     <!-- Based on the Json file, the cards related to the roles will be arranged -->
-    
-        <div v-if="neutralCard.name">
+        <div v-if="this.card[0].name">
             <div class="card-single">
-                <img :src="require(`@/assets/images/roles/${neutralCard.name}.png`)" />
+                <img :src="require(`@/assets/images/roles/${this.card[0].name}.png`)" />
             </div>
            
             <h2>Alignment:</h2>
-            <p>{{ neutralCard.alignment }}</p>
+            <p>{{ this.card[0].alignment }}</p>
             <h3>Description:</h3>
-            <p>{{ neutralCard.description }}</p>
+            <p>{{ this.card[0].description }}</p>
         </div>
-    
+        
+        <div class="arrows">
+            <button class="changePageButton" @click='changeCardPage(-1)'>
+                <fa icon='chevron-circle-left'/>
+            </button>
+            <button class="changePageButton" @click='changeCardPage(+1)'>
+                <fa icon='chevron-circle-right'/>
+            </button>
+        </div>
+
     <footer-view></footer-view>
 </template>
   
 <script>
 import HeaderView from '@/components/HeaderView.vue'
-import ArrowsView from '@/components/ArrowsView.vue'
 import FooterView from '@/components/FooterView.vue'
-import neutralRolesJson from '@/json/neutralRoles.json'
+
+import { getCards, getRoles, goUpperPage } from '@/utils/dataHandler'
 
 export default {
     name: 'NeutralCard',
     components: {
         HeaderView,
-        ArrowsView,
-        FooterView,
+        FooterView
     },
     data(){
         return{
-            neutralCard: {}
+            card: getCards(this.$route.params.cardName, 'neutral').card,
+            id: getCards(this.$route.params.cardName, 'neutral').roleId
         }
     },
-   
-    mounted() {
-        const neutralCardName = this.$route.params.cardName;
-        const neutralCard = neutralRolesJson.filter((role)=> role.name === neutralCardName)[0];
-        this.neutralCard = neutralCard;
+    methods: {
+        changeCardPage(x) {
+            const newId = this.id + x;
+            const newRole = getRoles('neutral').find(role => role.id === newId).name
+            window.location = newRole
+        },
+        goUpperPage
     }
 } 
 </script>

@@ -13,10 +13,10 @@
         <div class="container-grid">
             <div class="row gap-0 justify-flex-start">
                 <div class="col-6-xs col-6-sm col-6-xl">
-                    <div class="card" v-for="neutralRole in neutralRoles" :key="neutralRole">
-                        <div v-if="neutralRole.alignment === alignment">
-                            <router-link :to="{ name: 'neutralCard', params:{ cardName: neutralRole.name }}">
-                                <img :src="require(`@/assets/images/roles/${neutralRole.name}.png`)" />
+                    <div class="card" v-for="role in roles" :key="role">
+                        <div v-if="role.alignment === alignment">
+                            <router-link :to="{ name: 'neutralCard', params:{ cardName: role.name }}">
+                                <img :src="require(`@/assets/images/roles/${role.name}.png`)" />
                             </router-link>
                         </div>
                     </div>
@@ -25,43 +25,38 @@
         </div>
     </div>
 
+    <div class="arrows">
+        <button class="changePageButton" @click='shiftRolesPage(this.index, -1)'>
+            <fa icon='chevron-circle-left'/>
+        </button>
+        <button class="changePageButton" @click='shiftRolesPage(this.index, +1)'>
+            <fa icon='chevron-circle-right'/>
+        </button>
+    </div>
+
 </template>
 
 <script>
 import HeaderView from '@/components/HeaderView.vue'
 import ArrowsView from '@/components/ArrowsView.vue'
-import neutralRolesJson from '../json/neutralRoles.json'
 
+import { getRoles, getAlignments, shiftRolesPage } from '@/utils/dataHandler'
+    
 export default {
     data(){
         return{
-            neutralRoles: neutralRolesJson,
-            alignments: []
+            roles: getRoles('neutral'),
+            alignments: getAlignments('neutral'),
+            index: 2
         }
     },
-
-    name: 'NeutralRoles',
     components: {
         HeaderView,
         ArrowsView,
     },
-
-    mounted() {
-        // The function to create the list of alignments
-        const newAlignment = []
-        for (var i = 0 ; i < neutralRolesJson.length ; i++ ) {
-            const exists = newAlignment.includes(neutralRolesJson[i].alignment);
-            // To remove repeated alignments
-            if (!exists) {
-                newAlignment.push(neutralRolesJson[i].alignment);
-            }        
-        }
-        this.alignments = newAlignment
+    methods:{
+        shiftRolesPage
     }
 } 
 
 </script>
-
-<style scoped>
-
-</style>

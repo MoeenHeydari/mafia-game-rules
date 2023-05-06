@@ -1,19 +1,26 @@
 <template>
     <div class="arrows">
-        <a href="#">
+        <button class="changePageButton" @click='changePage(-1)'>
             <fa icon='chevron-circle-left'/>
-        </a>
-        
-        <a href="#">
+        </button>
+        <button class="changePageButton" @click='changePage(+1)'>
             <fa icon='chevron-circle-right'/>
-        </a>
+        </button>
     </div>
-
 </template>
   
 <script>
     export default {
         name: 'ArrowsView',
-        props: {}
+        props: ['id'],
+        methods:{
+            changePage(x) {
+                const newId = this.id + x;
+                this.$emit('change-page', newId)
+            }            
+        }
     }
 </script>
+
+<style scoped>
+</style>

@@ -1,48 +1,59 @@
 <template>
     <header-view></header-view>
 
-    <!-- Icons to go to the previous and next pages -->
-    <arrows-view></arrows-view>
+    <button class="changePageButton" @click='goUpperPage(card[0].classification)'>
+        <fa icon='arrow-alt-circle-left'/>
+    </button>
 
     <!-- Based on the Json file, the cards related to the roles will be arranged -->
-    
-        <div v-if="mafiaCard.name">
+        <div v-if="this.card[0].name">
             <div class="card-single">
-                <img :src="require(`@/assets/images/roles/${mafiaCard.name}.png`)" />
+                <img :src="require(`@/assets/images/roles/${this.card[0].name}.png`)" />
             </div>
            
             <h2>Alignment:</h2>
-            <p>{{ mafiaCard.alignment }}</p>
+            <p>{{ this.card[0].alignment }}</p>
             <h3>Description:</h3>
-            <p>{{ mafiaCard.description }}</p>
+            <p>{{ this.card[0].description }}</p>
         </div>
-    
+        
+        <div class="arrows">
+            <button class="changePageButton" @click='changeCardPage(-1)'>
+                <fa icon='chevron-circle-left'/>
+            </button>
+            <button class="changePageButton" @click='changeCardPage(+1)'>
+                <fa icon='chevron-circle-right'/>
+            </button>
+        </div>
+
     <footer-view></footer-view>
 </template>
   
 <script>
 import HeaderView from '@/components/HeaderView.vue'
-import ArrowsView from '@/components/ArrowsView.vue'
 import FooterView from '@/components/FooterView.vue'
-import mafiaRolesJson from '@/json/mafiaRoles.json'
+
+import { getCards, getRoles, goUpperPage } from '@/utils/dataHandler'
 
 export default {
     name: 'MafiaCard',
     components: {
         HeaderView,
-        ArrowsView,
-        FooterView,
+        FooterView
     },
     data(){
         return{
-            mafiaCard: {},
+            card: getCards(this.$route.params.cardName, 'mafia').card,
+            id: getCards(this.$route.params.cardName, 'mafia').roleId
         }
     },
-   
-    mounted() {
-        const mafiaCardName = this.$route.params.cardName;
-        const mafiaCard = mafiaRolesJson.filter((role)=> role.name === mafiaCardName)[0];
-        this.mafiaCard = mafiaCard;
+    methods: {
+        changeCardPage(x) {
+            const newId = this.id + x;
+            const newRole = getRoles('mafia').find(role => role.id === newId).name
+            window.location = newRole
+        },
+        goUpperPage
     }
 } 
 </script>

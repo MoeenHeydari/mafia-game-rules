@@ -1,0 +1,633 @@
+{
+    "classifications": [
+        {
+            "name": "Town",
+            "img": "../assets/images/classification/Town.webp",
+            "isPositive": true,
+            "href": "/roles/townRoles",
+            "color": "#54FDA3"
+        },
+    
+        {
+            "name": "Mafia",
+            "img": "../assets/images/classification/Mafia.webp",
+            "isPositive": false,
+            "href": "/roles/mafiaRoles",
+            "color":"#F61A1A"
+        },
+    
+        {
+            "name": "Neutral",
+            "img": "../assets/images/classification/Neutral.webp",
+            "isPositive": false,
+            "href": "/roles/neutralRoles",
+            "color":"#7D7D7D"
+        }
+    ],
+
+    "roles": {
+        "town":[
+            { 
+                "id": 1,
+                "name": "Citizen",
+                "classification": "town",
+                "alignment": "Town (Townie)",
+                "description": "The citizen is the core of the town team, who has no ability in the night phase, he will win the game when he has eliminated all the mafia members as well as the neutral killers from the game.",
+                "img": "../assets/images/roles/Citizen.png",
+                "href": "/roles/townRoles/Citizen"
+            },
+        
+            { 
+                "id": 2,
+                "name": "Invulnerable",
+                "classification": "town",
+                "alignment": "Town (Townie)",
+                "description": "Invulnerable is one of the characters of the group of citizens who will be safe from being killed by basic attack just for one night.",
+                "img": "../assets/images/roles/Invulnerable.png",
+                "href": "/roles/townRoles/Invulnerable"
+            },
+        
+            { 
+                "id": 3,
+                "name": "Traitor",
+                "classification": "town",
+                "alignment": "Town (Townie)",
+                "description": "The traitor is a member of the citizen team, if she is attacked by the mafia team, he is not killed, and from the next night of the game, he wakes up with the mafia members by betraying the town team and becomes a mafia.",
+                "img": "../assets/images/roles/Traitor.png",
+                "href": "/roles/townRoles/Traitor"
+            },
+        
+            { 
+                "id": 4,
+                "name": "Student",
+                "classification": "town",
+                "alignment": "Town (Townie)",
+                "description": "The student is one of the characters of the group of citizens, and if he is killed, the game manager announces the death of the student and the possibility of expelling two players on the current day.",
+                "img": "../assets/images/roles/Student.png",
+                "href": "/roles/townRoles/Student"
+            },
+        
+            { 
+                "id": 5,
+                "name": "Detective",
+                "classification": "town",
+                "alignment": "Town (Investigative)",
+                "description": "You will know if your target is suspicious, except for the Godfather.",
+                "img": "../assets/images/roles/Detective.png",
+                "href": "/roles/townRoles/Detective"
+            },
+        
+            { 
+                "id": 6,
+                "name": "Lookout",
+                "classification": "town",
+                "alignment": "Town (Investigative)",
+                "description": "Watch one person at night to see who visits them.",
+                "img": "../assets/images/roles/Lookout.png",
+                "href": "/roles/townRoles/Lookout"
+            },
+        
+            { 
+                "id": 7,
+                "name": "Tracker",
+                "classification": "town",
+                "alignment": "Town (Investigative)",
+                "description": "Track one person at night to see who they visit.",
+                "img": "../assets/images/roles/Tracker.png",
+                "href": "/roles/townRoles/Tracker"
+            },
+        
+            { 
+                "id": 8,
+                "name": "Autopsist",
+                "classification": "town",
+                "alignment": "Town (Investigative)",
+                "description": "Autopsist is one of the characters of the group of citizens who can choose one of the people killed in the previous nights every night in order to be aware of his or her role.",
+                "img": "../assets/images/roles/Autopsist.png",
+                "href": "/roles/townRoles/Autopsist"
+            },
+        
+            { 
+                "id": 9,
+                "name": "Mason",
+                "classification": "town",
+                "alignment": "Town (Investigative)",
+                "description": "The Masons are a group of players that don't know each other's roles but are allowed to communicate privately with each other outside of the game thread.",
+                "img": "../assets/images/roles/Mason.png",
+                "href": "/roles/townRoles/Mason"
+            },
+        
+            { 
+                "id": 10,
+                "name": "Sniper",
+                "classification": "town",
+                "alignment": "Town (Killing)",
+                "description": "If your target is attacked, both you and your attacker will die instead. If you successfully protect someone, you can't be saved from death. Your counterattack ignores night immunity.",
+                "img": "../assets/images/roles/Sniper.png",
+                "href": "/townRoles/Sniper"
+            },
+        
+            { 
+                "id": 11,
+                "name": "Veteran",
+                "classification": "town",
+                "alignment": "Town (Killing)",
+                "description": "While on alert you can not be killed at night. If anyone visits you while you are on alert they will be shot. You can only go on alert 3 times. You are immune to role blocks.",
+                "img": "../assets/images/roles/Veteran.png",
+                "href": "/townRoles/Veteran"
+            },
+        
+            { 
+                "id": 12,
+                "name": "Jailor",
+                "classification": "town",
+                "alignment": "Town (Killing)",
+                "description": "You may anonymously talk with your prisoner.  You may choose to execute your prisoner. The jailed target cannot perform their night ability. While jailed the prisoner is safe from all attacks.",
+                "img": "../assets/images/roles/Jailor.png",
+                "href": "/townRoles/Jailor"
+            },
+        
+            { 
+                "id": 13,
+                "name": "Gunsmith",
+                "classification": "town",
+                "alignment": "Town (Killing)",
+                "description": "The Gunsmith cannot pass guns to himself. The player receiving the gun will be informed of this at the beginning of the next day phase, but they will not learn who they received it from. They will also not learn if they received a fake gun (see Fabricator). A different, equally popular, version of this role is a Gunsmith that passes out regular guns that can only be used and resolved normally at night without any chance or risk of the shooter being revealed if they use the gun.",
+                "img": "../assets/images/roles/Gunsmith.png",
+                "href": "/townRoles/Gunsmith"
+            },
+        
+            { 
+                "id": 14,
+                "name": "VampireHunter",
+                "classification": "town",
+                "alignment": "Town (Killing)",
+                "description": "If you find a Vampire you will stake them in the heart. If a Vampire visits you they will be staked. You can hear Vampires at night.If you kill all Vampires you will become a Vigilante.",
+                "img": "../assets/images/roles/VampireHunter.png",
+                "href": "/townRoles/VampireHunter"
+            },
+        
+            { 
+                "id": 15,
+                "name": "Doctor",
+                "classification": "town",
+                "alignment": "Town (Protective)",
+                "description": "You may only heal yourself once. You will know if your target is attacked.",
+                "img": "../assets/images/roles/Doctor.png",
+                "href": "/townRoles/Doctor"
+            },
+        
+            { 
+                "id": 16,
+                "name": "Hero",
+                "classification": "town",
+                "alignment": "Town (Protective)",
+                "description": "Hero is one of the characters of the group of citizens who has the ability to protect a person against any attack in the night phase.",
+                "img": "../assets/images/roles/Hero.png",
+                "href": "/townRoles/Hero"
+            },
+        
+            { 
+                "id": 17,
+                "name": "Bodyguard",
+                "classification": "town",
+                "alignment": "Town (Protective)",
+                "description": "You will know if your target is suspicious, except for the Godfather.",
+                "img": "../assets/images/roles/Bodyguard.png",
+                "href": "/townRoles/Bodyguard"
+            },
+        
+            { 
+                "id": 18,
+                "name": "Crusader",
+                "classification": "town",
+                "alignment": "Town (Protective)",
+                "description": "Grant your target Powerful defense. You will know if your target is attacked. You attack one person who visits your target on the same night. You do not attack vampires, but you do block their attacks. You will know if your target is attacked.",
+                "img": "../assets/images/roles/Crusader.png",
+                "href": "/townRoles/Crusader"
+            },
+        
+            { 
+                "id": 19,
+                "name": "Trapper",
+                "classification": "town",
+                "alignment": "Town (Protective)",
+                "description": "Traps take one day to build. Traps can be torn down by selecting yourself at night. You may only have one Trap out at a time.",
+                "img": "../assets/images/roles/Trapper.png",
+                "href": "/townRoles/Trapper"
+            },
+        
+            { 
+                "id": 20,
+                "name": "Reflector",
+                "classification": "town",
+                "alignment": "Town (Protective)",
+                "description": "The Reflector may each night give someone a reflection shield, which will cause anyone targeting the Reflector's target to have their actions reflected back onto themselves. The reflection shield lasts only one night.",
+                "img": "../assets/images/roles/Reflector.png",
+                "href": "/townRoles/Reflector"
+            },
+        
+            { 
+                "id": 21,
+                "name": "Priest",
+                "classification": "town",
+                "alignment": "Town (Support)",
+                "description": "The Priest is one of the characters of the group of citizens who wakes up every night after the silencer and chooses one person, if that person is chosen by the silencer on the same night, she will be saved.",
+                "img": "../assets/images/roles/Priest.png",
+                "href": "/townRoles/Priest"
+            },
+        
+            { 
+                "id": 22,
+                "name": "Escort",
+                "classification": "town",
+                "alignment": "Town (Support)",
+                "description": "Distraction blocks your target from using their role's night ability. You are immune to role blocks. If you target a Serial Killer, they will attack you.",
+                "img": "../assets/images/roles/Escort.png",
+                "href": "/townRoles/Escort"
+            },
+        
+            { 
+                "id": 23,
+                "name": "Mayor",
+                "classification": "town",
+                "alignment": "Town (Support)",
+                "description": "Once you have revealed yourself as the Mayor your vote counts as 3 votes. You may not be healed once you have revealed. Once revealed you can't whisper, or be whispered to.",
+                "img": "../assets/images/roles/Mayor.png",
+                "href": "/townRoles/Mayor"
+            },
+        
+            { 
+                "id": 24,
+                "name": "Retributionist",
+                "classification": "town",
+                "alignment": "Town (Support)",
+                "description": "Create zombies from dead true-hearted Town players. Use their abilities on your second target. Each zombie can be used once before it rots.",
+                "img": "../assets/images/roles/Retributionist.png",
+                "href": "/townRoles/Retributionist"
+            },
+        
+            { 
+                "id": 25,
+                "name": "Judge",
+                "classification": "town",
+                "alignment": "Town (Support)",
+                "description": "The Judge may just one night choose to kill someone who was on the lynch bandwagon during the most recent day phase.",
+                "img": "../assets/images/roles/Judge.png",
+                "href": "/townRoles/Judge"
+            },
+        
+            { 
+                "id": 26,
+                "name": "Conjurer",
+                "classification": "town",
+                "alignment": "Town (Support)",
+                "description": "Conjurer is one of the characters of the group of citizens who wakes up every night and has the ability to summon any of the dead in the game. The summoned person can play his role on the same night if he wishes",
+                "img": "../assets/images/roles/Conjurer.png",
+                "href": "/townRoles/Conjurer"
+            }
+        ],
+        "mafia": [
+            { 
+                "id": 101,
+                "name": "Godfather",
+                "classification": "mafia",
+                "alignment": "Mafia (Killing)",
+                "description": "You can't be killed at night. If there is a Mafioso he will attack the target instead of you. You will appear to be a Town member to the Sheriff. You can talk with the other Mafia at night.",
+                "img": "../assets/images/roles/Godfather.png",
+                "href": "/mafiaRoles/Godfather"
+            },
+        
+            { 
+                "id": 102,
+                "name": "Mafia",
+                "classification": "mafia",
+                "alignment": "Mafia (Killing)",
+                "description": "You can kill if the Godfather doesn't give you orders. If the Godfather dies you will become the next Godfather. You can talk with the other Mafia at night.",
+                "img": "../assets/images/roles/Mafia.png",
+                "href": "/mafiaRoles/Mafia"
+            },
+        
+            { 
+                "id": 103,
+                "name": "Assassin",
+                "classification": "mafia",
+                "alignment": "Mafia (Killing)",
+                "description": "Assassin is a member of the mafia group who wakes up every night with the mafia team, he is able to shoot independently from the mafia's arrow once during the game.",
+                "img": "../assets/images/roles/Assassin.png",
+                "href": "/mafiaRoles/Assassin"
+            },
+        
+            { 
+                "id": 104,
+                "name": "Bomber",
+                "classification": "mafia",
+                "alignment": "Mafia (Killing)",
+                "description": "The Bomber is mostly used in setups where the mafia must assign their nightkill to be carried out by a specific member of their team, making that person vulnerable to a Bomb. If the mafia nightkill is not assigned to any specific player, then sometimes the host will randomly choose a member of the mafia team to die, if they use their nightkill on the Bomb.",
+                "img": "../assets/images/roles/Bomber.png",
+                "href": "/mafiaRoles/Bomber"
+            },
+        
+            { 
+                "id": 105,
+                "name": "Saboteur",
+                "classification": "mafia",
+                "alignment": "Mafia (Killing)",
+                "description": "The saboteur is a member of the mafia group who wakes up every night with the mafia team and chooses one person, if the chosen person is a sniper, if the sniper shoots in the same night, his bullet will hit himself, if the chosen person is a gunsmith gun if he shoots the next day, his arrow will hit himself.",
+                "img": "../assets/images/roles/Saboteur.png",
+                "href": "/mafiaRoles/Saboteur"
+            },
+        
+            { 
+                "id": 106,
+                "name": "Consort",
+                "classification": "mafia",
+                "alignment": "Mafia (Support)",
+                "description": "Distraction blocks your target from using their role's night ability. If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
+                "img": "../assets/images/roles/Consort.png",
+                "href": "/mafiaRoles/Consort"
+            },
+            
+            { 
+                "id": 107,
+                "name": "Consigliere",
+                "classification": "mafia",
+                "alignment": "Mafia (Support)",
+                "description": "If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
+                "img": "../assets/images/roles/Consigliere.png",
+                "href": "/mafiaRoles/Consigliere"
+            },
+        
+            { 
+                "id": 108,
+                "name": "Spy",
+                "classification": "mafia",
+                "alignment": "Mafia (Support)",
+                "description": "Spy is a member of the mafia team, who wakes up with the mafia on the night of introduction, during the game, he wakes up after all the players during the game and chooses one person, then the master informs him what the desired person will go to this night. Someone is gone. Also, on even nights, he wakes up with the mafia.",
+                "img": "../assets/images/roles/Spy.png",
+                "href": "/mafiaRoles/Spy"
+            },
+        
+            { 
+                "id": 109,
+                "name": "Framer",
+                "classification": "mafia",
+                "alignment": "Mafia (Deception)",
+                "description": "If your target is investigated they will appear to be a member of the Mafia. If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
+                "img": "../assets/images/roles/Framer.png",
+                "href": "/mafiaRoles/Framer"
+            },
+        
+            { 
+                "id": 110,
+                "name": "Janitor",
+                "classification": "mafia",
+                "alignment": "Mafia (Deception)",
+                "description": "If your target dies their role and last will won't be revealed to the town. Only you will see the cleaned targets role and last will. You may only perform 3 cleanings. If there are no kill capable Mafia roles left you will become a Mafioso.",
+                "img": "../assets/images/roles/Janitor.png",
+                "href": "/mafiaRoles/Janitor"
+            },
+            
+            { 
+                "id": 111,
+                "name": "Mistress",
+                "classification": "mafia",
+                "alignment": "Mafia (Deception)",
+                "description": "The mistress is a member of the mafia group, if killed, the mafia team will be able to fire two shots at the same time the next night.",
+                "img": "../assets/images/roles/Mistress.png",
+                "href": "/mafiaRoles/Mistress"
+            },
+        
+            { 
+                "id": 112,
+                "name": "Silencer",
+                "classification": "mafia",
+                "alignment": "Mafia (SideTeammate)",
+                "description": "Blackmailed targets can not talk during the day. If there are no kill capable Mafia roles left you will become a Mafioso. You can talk with the other Mafia at night.",
+                "img": "../assets/images/roles/Silencer.png",
+                "href": "/mafiaRoles/Silencer"
+            },
+        
+            { 
+                "id": 113,
+                "name": "Terrorist",
+                "classification": "mafia",
+                "alignment": "Mafia (SideTeammate)",
+                "description": "The terrorist is a member of the mafia team, but he does not wake up at night. The terrorist can announce to the master at any moment of the day that he wants to leave the game with one of the players (or in other words, blow himself up with another player) after This action, if the person chosen by the terrorist is a simple citizen, senior citizen, or godfather, he will survive and the terrorist will leave the game alone, otherwise both players will leave the game.",
+                "img": "../assets/images/roles/Terrorist.png",
+                "href": "/mafiaRoles/Terrorist"
+            },
+        
+            { 
+                "id": 114,
+                "name": "Lawyer",
+                "classification": "mafia",
+                "alignment": "Mafia (SideTeammate)",
+                "description": "Lawyer is a member of the mafia team who wakes up independently in the night phase and selects a person, the inquiry of the selected person is negative in this night, also the lawyer can decide whether to vote for the selected person on the next day or not. .",
+                "img": "../assets/images/roles/Lawyer.png",
+                "href": "/mafiaRoles/Lawyer"
+            }
+        ],
+        "neutral": [
+            { 
+                "id": 201,
+                "name": "SerialKiller",
+                "classification": "neutral",
+                "alignment": "Neutral (Killing)",
+                "description": "If you are role blocked you will attack the role blocker in addition to your target. Role blockers that target you will have their last will covered in blood making it unreadable. You can choose to be cautious and not kill role blockers.",
+                "img": "../assets/images/roles/SerialKiller.png",
+                "href": "/neutralRoles/SerialKiller"
+            },
+        
+            { 
+                "id": 202,
+                "name": "Poisoner",
+                "classification": "neutral",
+                "alignment": "Neutral (Killing)",
+                "description": "The poisoner is an neutral killer who wakes up every night and chooses one person, the target person is poisoned and will be killed one night later if he or she is not cured by the doctor or the guardian angel on the same night or the next night.",
+                "img": "../assets/images/roles/Poisoner.png",
+                "href": "/neutralRoles/Poisoner"
+            },
+        
+            { 
+                "id": 203,
+                "name": "Ted",
+                "classification": "neutral",
+                "alignment": "Neutral (Killing)",
+                "description": "Ted and Tommy are independent killers of the game who are not aware of each other's identity, but they are each other's friends, and if each of them wins, both of them will win. The function of these two is that on odd nights, Ted wakes up and on even nights, Tommy wakes up and kills one person.",
+                "img": "../assets/images/roles/Ted.png",
+                "href": "/neutralRoles/Ted"
+            },
+        
+            { 
+                "id": 204,
+                "name": "Tommy",
+                "classification": "neutral",
+                "alignment": "Neutral (Killing)",
+                "description": "Tommy and Ted are independent killers of the game who are not aware of each other's identity, but they are each other's friends, and if each of them wins, both of them will win. The function of these two is that on odd nights, Ted wakes up and on even nights, Tommy wakes up and kills one person.",
+                "img": "../assets/images/roles/Tommy.png",
+                "href": "/neutralRoles/Tommy"
+            },
+        
+            { 
+                "id": 205,
+                "name": "MassMurderer",
+                "classification": "neutral",
+                "alignment": "Neutral (Killing)",
+                "description": "The Mass Murderer is an independently aligned role that can kill anyone who visits a location (i.e. a certain player) at night. The Mass Murderer may not target himself on consecutive nights",
+                "img": "../assets/images/roles/MassMurderer.png",
+                "href": "/neutralRoles/MassMurderer"
+            },
+        
+            { 
+                "id": 206,
+                "name": "Cowboy",
+                "classification": "neutral",
+                "alignment": "Neutral (Killing)",
+                "description": "The cowboy is one of the neutral killers of the game who acts to kill someone in the night phase, the selected person wakes up before being killed by the game master and guesses someone as a cowboy, if his guess is correct, he lives and the cowboy will be killed instead of him.    Note: Cowboy has the ability to use his powerful shot (which has the ability to kill Godfather, Werewolf, etc.) once during the game, in which case the possibility of being guessed by his target is ruled out.               Note: Cowboy has a basic attack level as well as a basic defense level.",
+                "img": "../assets/images/roles/Cowboy.png",
+                "href": "/neutralRoles/Cowboy"
+            },
+        
+            { 
+                "id": 207,
+                "name": "Cannibal",
+                "classification": "neutral",
+                "alignment": "Neutral (Killing)",
+                "description": "Cannibal is one of the neutral killers of the game, who is obliged to kill one of the players every night. During the game, he can only not kill anyone for one night, and if he repeats (not killing anyone), he will die himself.",
+                "img": "../assets/images/roles/Cannibal.png",
+                "href": "/neutralRoles/Cannibal"
+            },
+        
+            { 
+                "id": 208,
+                "name": "Werewolf",
+                "classification": "neutral",
+                "alignment": "Neutral (Killing)",
+                "description": "As a Werewolf you can not be killed at night. As a Werewolf you will attack your victim and anyone that visits them. Your attack goes through night immunity. As a Werewolf you may choose to stay home and attack anyone who visits you.",
+                "img": "../assets/images/roles/Werewolf.png",
+                "href": "/neutralRoles/Werewolf"
+            },
+        
+            { 
+                "id": 209,
+                "name": "Juggernaut",
+                "classification": "neutral",
+                "alignment": "Neutral (Killing)",
+                "description": "With each kill your powers grow. You may attack every night. You have Basic Defense. You Rampage when you attack. You now ignore all effects that would protect a player.",
+                "img": "../assets/images/roles/Juggernaut.png",
+                "href": "/neutralRoles/Juggernaut"
+            },
+        
+            { 
+                "id": 210,
+                "name": "Arsonist",
+                "classification": "neutral",
+                "alignment": "Neutral (Killing)",
+                "description": "Death from fire can't be prevented by healing. Select yourself to ignite doused people. You will douse anybody that visits you. You can take no action to undouse yourself.",
+                "img": "../assets/images/roles/Arsonist.png",
+                "href": "/neutralRoles/Arsonist"
+            },
+        
+            { 
+                "id": 211,
+                "name": "Plaguebearer",
+                "classification": "neutral",
+                "alignment": "Neutral (Chaos)",
+                "description": "Plaguebearer is one of the independents of the game who wakes up every night and chooses one person, the person who is chosen and the person who comes to the plague is infected with the plague and if he meets someone the next night or someone meets him , he also gets the plague, when all the living people in the game have the plague, the plague will win the game.",
+                "img": "../assets/images/roles/Plaguebearer.png",
+                "href": "/neutralRoles/Plaguebearer"
+            },
+        
+            { 
+                "id": 212,
+                "name": "Vampire",
+                "classification": "neutral",
+                "alignment": "Neutral (Chaos)",
+                "description": "Vampires vote at night to bite a target. The youngest Vampire will visit the target at night. You must wait 1 night between conversions.",
+                "img": "../assets/images/roles/Vampire.png",
+                "href": "/neutralRoles/Vampire"
+            },
+        
+            { 
+                "id": 213,
+                "name": "Rouge",
+                "classification": "neutral",
+                "alignment": "Neutral (Chaos)",
+                "description": "Rogue is one of the neutral of the game who chooses a person in the night phase, then the master tells her the role of the desired person, she can use that person's ability the next night and then choose another person to repeat this procedure.",
+                "img": "../assets/images/roles/Rouge.png",
+                "href": "/neutralRoles/Rouge"
+            },
+        
+            { 
+                "id": 214,
+                "name": "Jester",
+                "classification": "neutral",
+                "alignment": "Neutral (Evil)",
+                "description": "If you are lynched you may kill one of your guilty or abstaining voters the following night.",
+                "img": "../assets/images/roles/Jester.png",
+                "href": "/neutralRoles/Jester"
+            },
+        
+            { 
+                "id": 215,
+                "name": "Executioner",
+                "classification": "neutral",
+                "alignment": "Neutral (Evil)",
+                "description": "If your target is killed at night you will become a Jester. Your target is always a Town member.",
+                "img": "../assets/images/roles/Executioner.png",
+                "href": "/neutralRoles/Executioner"
+            },
+        
+            { 
+                "id": 216,
+                "name": "SinisterShadow",
+                "classification": "neutral",
+                "alignment": "Neutral (Evil)",
+                "description": "You can only control targetable actions such as detection and killing. You can force people to target themselves. Your victim will know they are being controlled.",
+                "img": "../assets/images/roles/SinisterShadow.png",
+                "href": "/neutralRoles/SinisterShadow"
+            },
+            
+            { 
+                "id": 217,
+                "name": "Pirate",
+                "classification": "neutral",
+                "alignment": "Neutral (Chaos)",
+                "description": "When you plunder a player, you will duel the player for their valuables. If the player defends against your attack, you get no loot.",
+                "img": "../assets/images/roles/Pirate.png",
+                "href": "/neutralRoles/Pirate"
+            },
+        
+            { 
+                "id": 218,
+                "name": "Survivor",
+                "classification": "neutral",
+                "alignment": "Neutral (Benign)",
+                "description": "Put on a bulletproof vest at night, protecting you from attacks.",
+                "img": "../assets/images/roles/Survivor.png",
+                "href": "/neutralRoles/Survivor"
+            },
+        
+            { 
+                "id": 219,
+                "name": "GuardianAngel",
+                "classification": "neutral",
+                "alignment": "Neutral (Benign)",
+                "description": "If your target is killed you will become a Survivor without any bulletproof vests. Twice a game you may Heal and Purge your target. This may be done from the grave. Watching over a player ignores Jailing.",
+                "img": "../assets/images/roles/GuardianAngel.png",
+                "href": "/neutralRoles/GuardianAngel"
+            },
+        
+            { 
+                "id": 220,
+                "name": "Drunk",
+                "classification": "neutral",
+                "alignment": "Neutral (Benign)",
+                "description": "Remember who you were by selecting a graveyard role.",
+                "img": "../assets/images/roles/Drunk.png",
+                "href": "/neutralRoles/Drunk"
+            }
+        ]
+    }
+}

@@ -13,10 +13,10 @@
         <div class="container-grid">
             <div class="row gap-0 justify-flex-start">
                 <div class="col-6-xs col-6-sm col-6-xl">
-                    <div class="card" v-for="mafiaRole in mafiaRoles" :key="mafiaRole">
-                        <div v-if="mafiaRole.alignment === alignment">
-                            <router-link :to="{ name: 'mafiaCard', params:{ cardName: mafiaRole.name }}">
-                                <img :src="require(`@/assets/images/roles/${mafiaRole.name}.png`)" />
+                    <div class="card" v-for="role in roles" :key="role">
+                        <div v-if="role.alignment === alignment">
+                            <router-link :to="{ name: 'mafiaCard', params:{ cardName: role.name }}">
+                                <img :src="require(`@/assets/images/roles/${role.name}.png`)" />
                             </router-link>
                         </div>
                     </div>
@@ -25,38 +25,37 @@
         </div>
     </div>
 
+    <div class="arrows">
+        <button class="changePageButton" @click='shiftRolesPage(this.index, -1)'>
+            <fa icon='chevron-circle-left'/>
+        </button>
+        <button class="changePageButton" @click='shiftRolesPage(this.index, +1)'>
+            <fa icon='chevron-circle-right'/>
+        </button>
+    </div>
+
 </template>
 
 <script>
 import HeaderView from '@/components/HeaderView.vue'
 import ArrowsView from '@/components/ArrowsView.vue'
-import mafiaRolesJson from '../json/mafiaRoles.json'
+
+import { getRoles, getAlignments, shiftRolesPage } from '@/utils/dataHandler'
     
 export default {
     data(){
         return{
-            mafiaRoles: mafiaRolesJson,
-            alignments: []
+            roles: getRoles('mafia'),
+            alignments: getAlignments('mafia'),
+            index: 1
         }
     },
-
-    name: 'MafiaRoles',
     components: {
         HeaderView,
         ArrowsView,
     },
-
-    mounted() {
-        // The function to create the list of alignments
-        const newAlignment = []
-        for (var i = 0 ; i <mafiaRolesJson.length ; i++ ) {
-            const exists = newAlignment.includes(mafiaRolesJson[i].alignment);
-            // To remove repeated alignments
-            if (!exists) {
-                newAlignment.push(mafiaRolesJson[i].alignment);
-            }        
-        }
-        this.alignments = newAlignment
+    methods:{
+        shiftRolesPage
     }
 } 
 

@@ -1,7 +1,7 @@
 <template>
     <div class="container">
 
-        <div  v-for="classification in classifications" :key="classification" >
+        <div v-for="classification in classifications" :key="classification" >
             <router-link :to="classification.href">
                 <div class="classification">
                     <img :src="require(`@/assets/images/classification/${classification.name}.webp`)" />
@@ -16,18 +16,16 @@
 </template>
   
 <script>
-import json from '../json/classifications.json'
+
+import { getClassifications } from '@/utils/dataHandler'
 
     export default {
         data(){
             return{
-                classifications: json,  
+                classifications: getClassifications()   
             }
         },
         name: 'RolesClassification',
-        props: {
-
-        }
     }
 </script>
 

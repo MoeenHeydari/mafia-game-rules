@@ -1,52 +1,62 @@
 <template>
     <header-view></header-view>
 
-    <!-- Icons to go to the previous and next pages -->
-    <arrows-view></arrows-view>
+    <button class="changePageButton" @click='goUpperPage(card[0].classification)'>
+        <fa icon='arrow-alt-circle-left'/>
+    </button>
 
     <!-- Based on the Json file, the cards related to the roles will be arranged -->
-    
-        <div v-if="townCard.name">
+        <div v-if="this.card[0].name">
             <div class="card-single">
-                <img :src="require(`@/assets/images/roles/${townCard.name}.png`)" />
+                <img :src="require(`@/assets/images/roles/${this.card[0].name}.png`)" />
             </div>
            
             <h2>Alignment:</h2>
-            <p>{{ townCard.alignment }}</p>
+            <p>{{ this.card[0].alignment }}</p>
             <h3>Description:</h3>
-            <p>{{ townCard.description }}</p>
+            <p>{{ this.card[0].description }}</p>
         </div>
-    
+        
+        <div class="arrows">
+            <button class="changePageButton" @click='changeCardPage(-1)'>
+                <fa icon='chevron-circle-left'/>
+            </button>
+            <button class="changePageButton" @click='changeCardPage(+1)'>
+                <fa icon='chevron-circle-right'/>
+            </button>
+        </div>
+
     <footer-view></footer-view>
 </template>
   
 <script>
 import HeaderView from '@/components/HeaderView.vue'
-import ArrowsView from '@/components/ArrowsView.vue'
 import FooterView from '@/components/FooterView.vue'
-import townRolesJson from '@/json/townRoles.json'
+
+import { getCards, getRoles, goUpperPage } from '@/utils/dataHandler'
 
 export default {
     name: 'TownCard',
     components: {
         HeaderView,
-        ArrowsView,
-        FooterView,
+        FooterView
     },
     data(){
         return{
-            townCard: {},
+            card: getCards(this.$route.params.cardName, 'town').card,
+            id: getCards(this.$route.params.cardName, 'town').roleId
         }
     },
-   
-    mounted() {
-        const townCardName = this.$route.params.cardName;
-        const townCard = townRolesJson.filter((role)=> role.name === townCardName)[0];
-        this.townCard = townCard;
+    methods: {
+        changeCardPage(x) {
+            const newId = this.id + x;
+            const newRole = getRoles('town').find(role => role.id === newId).name
+            window.location = newRole
+        },
+        goUpperPage
     }
 } 
 </script>
 
-<style scoped>
+<style>
 </style>
-  
