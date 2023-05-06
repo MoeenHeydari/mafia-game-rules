@@ -38,3 +38,6 @@ npm run build
 
 echo "$(tput setab 0)$(tput setaf 3) deploing to firebase... $(tput sgr 0)"
 firebase deploy
+
+echo "$(tput setab 0)$(tput setaf 3) checking out to develop branch... $(tput sgr 0)"
+git checkout develop
