@@ -9,7 +9,7 @@ if [[ $CURRENT_BRANCH != "develop" ]]; then
 fi
 
 echo "discarding all changes..."
-#git reset --hard HEAD
+git reset --hard HEAD
 
 echo "checking out to master branch..."
 git checkout master
